@@ -1,6 +1,6 @@
 ﻿using System.Drawing.Drawing2D;
 using System.Security.Cryptography.Xml;
-using iText.Layout.Properties;
+//using iText.Layout.Properties;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;

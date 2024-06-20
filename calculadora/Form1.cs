@@ -74,7 +74,9 @@ namespace calculadora
 
         private void mais_Click(object sender, EventArgs e)
         {
-           
+            operacaoSelecionada = Operacao.Adicao;
+            valor = Convert.ToDecimal(resultadoTextBox.Text);
+            resultadoTextBox.Text = "";
         }
 
         private void menos_Click(object sender, EventArgs e)
