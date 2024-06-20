@@ -62,11 +62,11 @@ namespace calculadora
             // resultadoTextBox
             // 
             this.resultadoTextBox.BackColor = System.Drawing.Color.Transparent;
-            this.resultadoTextBox.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.resultadoTextBox.Font = new System.Drawing.Font("Segoe UI", 35F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.resultadoTextBox.ForeColor = System.Drawing.Color.White;
             this.resultadoTextBox.Location = new System.Drawing.Point(2, 51);
             this.resultadoTextBox.Name = "resultadoTextBox";
-            this.resultadoTextBox.Size = new System.Drawing.Size(304, 144);
+            this.resultadoTextBox.Size = new System.Drawing.Size(304, 127);
             this.resultadoTextBox.TabIndex = 0;
             this.resultadoTextBox.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             // 
