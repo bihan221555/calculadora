@@ -75,6 +75,7 @@ namespace calculadora
             this.num1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("num1.BackgroundImage")));
             this.num1.BorderRadius = 10;
             this.num1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.num1.FlatAppearance.BorderSize = 0;
             this.num1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.num1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.num1.ForeColor = System.Drawing.Color.White;
