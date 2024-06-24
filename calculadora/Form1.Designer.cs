@@ -56,6 +56,8 @@ namespace calculadora
             this.delet1 = new calculadora.RoundButton();
             this.clear = new calculadora.RoundButton();
             this.porcentagem = new calculadora.RoundButton();
+            this.hamburguer = new System.Windows.Forms.Button();
+            this.classe = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // resultadoTextBox
@@ -410,6 +412,30 @@ namespace calculadora
             this.porcentagem.UseVisualStyleBackColor = true;
             this.porcentagem.Click += new System.EventHandler(this.porcentagem_Click);
             // 
+            // hamburguer
+            // 
+            this.hamburguer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hamburguer.BackgroundImage")));
+            this.hamburguer.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hamburguer.FlatAppearance.BorderSize = 0;
+            this.hamburguer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.hamburguer.Location = new System.Drawing.Point(3, 7);
+            this.hamburguer.Name = "hamburguer";
+            this.hamburguer.Size = new System.Drawing.Size(35, 36);
+            this.hamburguer.TabIndex = 21;
+            this.hamburguer.UseVisualStyleBackColor = true;
+            // 
+            // classe
+            // 
+            this.classe.AutoSize = true;
+            this.classe.BackColor = System.Drawing.Color.Transparent;
+            this.classe.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.classe.ForeColor = System.Drawing.Color.White;
+            this.classe.Location = new System.Drawing.Point(39, 10);
+            this.classe.Name = "classe";
+            this.classe.Size = new System.Drawing.Size(72, 25);
+            this.classe.TabIndex = 22;
+            this.classe.Text = "Padrão";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -417,6 +443,8 @@ namespace calculadora
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(307, 493);
+            this.Controls.Add(this.classe);
+            this.Controls.Add(this.hamburguer);
             this.Controls.Add(this.porcentagem);
             this.Controls.Add(this.clear);
             this.Controls.Add(this.delet1);
@@ -442,6 +470,7 @@ namespace calculadora
             this.Name = "Form1";
             this.Text = "Calculadora";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -468,10 +497,12 @@ namespace calculadora
         private RoundButton delet1;
         private RoundButton clear;
         private RoundButton porcentagem;
+        private Button hamburguer;
+        private Label classe;
     }
 
 
-public class RoundButton : Button
+    public class RoundButton : Button
     {
         // Propriedade para definir o raio dos cantos arredondados
         public int BorderRadius { get; set; } = 10;
