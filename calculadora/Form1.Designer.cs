@@ -58,6 +58,7 @@ namespace calculadora
             this.porcentagem = new calculadora.RoundButton();
             this.hamburguer = new System.Windows.Forms.Button();
             this.classe = new System.Windows.Forms.Label();
+            this.historicoTemp = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // resultadoTextBox
@@ -436,6 +437,14 @@ namespace calculadora
             this.classe.TabIndex = 22;
             this.classe.Text = "Padrão";
             // 
+            // historicoTemp
+            // 
+            this.historicoTemp.AutoSize = true;
+            this.historicoTemp.Location = new System.Drawing.Point(262, 76);
+            this.historicoTemp.Name = "historicoTemp";
+            this.historicoTemp.Size = new System.Drawing.Size(0, 15);
+            this.historicoTemp.TabIndex = 23;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -443,6 +452,7 @@ namespace calculadora
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(307, 493);
+            this.Controls.Add(this.historicoTemp);
             this.Controls.Add(this.classe);
             this.Controls.Add(this.hamburguer);
             this.Controls.Add(this.porcentagem);
@@ -499,6 +509,7 @@ namespace calculadora
         private RoundButton porcentagem;
         private Button hamburguer;
         private Label classe;
+        private Label historicoTemp;
     }
 
 
