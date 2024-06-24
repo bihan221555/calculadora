@@ -4,7 +4,11 @@ namespace calculadora
     {
         public decimal resultado { get; set; }
         public decimal valor { get; set; }
+        public decimal valor2 { get; set; }
+        public string sinal { get; set; }
+
         private Operacao operacaoSelecionada { get; set; }
+
         private enum Operacao
         {
             Adicao,
@@ -12,6 +16,7 @@ namespace calculadora
             Multiplicacao,
             Divisao
         }
+
         public Form1()
         {
             InitializeComponent();
@@ -69,41 +74,71 @@ namespace calculadora
 
         private void virgula_Click(object sender, EventArgs e)
         {
-            resultadoTextBox.Text += ",";
+            if (resultadoTextBox.Text == "")
+            {
+                resultadoTextBox.Text = "0,";
+            }
+            else if (!resultadoTextBox.Text.Contains(","))
+            {
+                resultadoTextBox.Text += ",";
+            }
         }
 
         private void mais_Click(object sender, EventArgs e)
         {
-            operacaoSelecionada = Operacao.Adicao;
-            valor = Convert.ToDecimal(resultadoTextBox.Text);
-            resultadoTextBox.Text = "";
+            if (resultadoTextBox.Text != "")
+            {
+                sinal = "+";
+                operacaoSelecionada = Operacao.Adicao;
+                valor += Convert.ToDecimal(resultadoTextBox.Text);
+                valor2 = Convert.ToDecimal(resultadoTextBox.Text);
+                resultadoTextBox.Text = "";
+            }
         }
 
         private void menos_Click(object sender, EventArgs e)
         {
-            operacaoSelecionada = Operacao.Subtracao;
-            valor = Convert.ToDecimal(resultadoTextBox.Text);
-            resultadoTextBox.Text = "";
+            if (resultadoTextBox.Text != "")
+            {
+                sinal = "-";
+                operacaoSelecionada = Operacao.Subtracao;
+                valor += Convert.ToDecimal(resultadoTextBox.Text);
+                valor2 = Convert.ToDecimal(resultadoTextBox.Text);
+                resultadoTextBox.Text = "";
+            }
         }
 
         private void vezes_Click(object sender, EventArgs e)
         {
-            operacaoSelecionada = Operacao.Multiplicacao;
-            valor = Convert.ToDecimal(resultadoTextBox.Text);
-            resultadoTextBox.Text = "";
+            if (resultadoTextBox.Text != "")
+            {
+                sinal = "X";
+                operacaoSelecionada = Operacao.Multiplicacao;
+                valor += Convert.ToDecimal(resultadoTextBox.Text);          
+                valor2 = Convert.ToDecimal(resultadoTextBox.Text);
+                resultadoTextBox.Text = "";
+            }
         }
 
         private void divisao_Click(object sender, EventArgs e)
         {
-            operacaoSelecionada = Operacao.Divisao;
-            valor = Convert.ToDecimal(resultadoTextBox.Text);
-            resultadoTextBox.Text = "";
+            if (resultadoTextBox.Text != "")
+            {
+                sinal = "/";
+                operacaoSelecionada = Operacao.Divisao;
+                valor += Convert.ToDecimal(resultadoTextBox.Text);
+                valor2 = Convert.ToDecimal(resultadoTextBox.Text);
+                resultadoTextBox.Text = "";
+            }
         }
 
         private void negativar_Click(object sender, EventArgs e)
         {
-            double numeroNegativo = Math.Pow(float.Parse(resultadoTextBox.Text), 1) * -1;
-            resultadoTextBox.Text = numeroNegativo.ToString();
+            if (resultadoTextBox.Text != "")
+            {
+                double numeroNegativo = Math.Pow(float.Parse(resultadoTextBox.Text), 1) * -1;
+                resultadoTextBox.Text = numeroNegativo.ToString();
+            }
         }
 
         private void delet1_Click(object sender, EventArgs e)
@@ -113,7 +148,6 @@ namespace calculadora
             {
                 // Obtém o texto atual
                 string textoAtual = resultadoTextBox.Text;
-
                 // Verifica se há caracteres para apagar
                 if (textoAtual.Length > 0)
                 {
@@ -123,35 +157,50 @@ namespace calculadora
             }
         }
 
-            private void clear_Click(object sender, EventArgs e)
+        private void clear_Click(object sender, EventArgs e)
         {
             resultadoTextBox.Text = "";
             valor = 0;
+            valor2 = 0;
         }
 
         private void porcentagem_Click(object sender, EventArgs e)
         {
-            
+            // Implemente a funcionalidade desejada para o botão de porcentagem, se necessário
         }
 
         private void igual_Click(object sender, EventArgs e)
         {
-            switch (operacaoSelecionada) 
+            if (resultadoTextBox.Text != "")
             {
-                case Operacao.Adicao:
-                    resultado = valor + Convert.ToDecimal(resultadoTextBox.Text);
-                    break;
-                case Operacao.Subtracao:
-                    resultado = valor - Convert.ToDecimal(resultadoTextBox.Text);
-                    break;
-                case Operacao.Multiplicacao:
-                    resultado = valor * Convert.ToDecimal(resultadoTextBox.Text);
-                    break; 
-                case Operacao.Divisao:
-                    resultado = valor / Convert.ToDecimal(resultadoTextBox.Text);
-                    break;
+                switch (operacaoSelecionada)
+                {
+                    case Operacao.Adicao:
+                        resultado = valor + Convert.ToDecimal(resultadoTextBox.Text);
+                        break;
+                    case Operacao.Subtracao:
+                        resultado = valor - Convert.ToDecimal(resultadoTextBox.Text);
+                        break;
+                    case Operacao.Multiplicacao:
+                        resultado = valor * Convert.ToDecimal(resultadoTextBox.Text);
+                        break;
+                    case Operacao.Divisao:
+                        if (Convert.ToDecimal(resultadoTextBox.Text) != 0)
+                        {
+                            resultado = valor / Convert.ToDecimal(resultadoTextBox.Text);
+                        }
+                        else
+                        {
+                            resultadoTextBox.Text = "Error";
+                        }
+                        break;
+                }
+
+                if (operacaoSelecionada != Operacao.Divisao)
+                {
+                    resultadoTextBox.Text = Convert.ToString(resultado);
+                }
             }
-            resultadoTextBox.Text = Convert.ToString(resultado);
         }
     }
 }
