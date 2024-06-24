@@ -58,6 +58,7 @@ namespace calculadora
             this.porcentagem = new calculadora.RoundButton();
             this.classe = new System.Windows.Forms.Label();
             this.hamburguer = new calculadora.RoundButton();
+            this.historicoTemp = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // resultadoTextBox
@@ -65,9 +66,9 @@ namespace calculadora
             this.resultadoTextBox.BackColor = System.Drawing.Color.Transparent;
             this.resultadoTextBox.Font = new System.Drawing.Font("Segoe UI", 35F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.resultadoTextBox.ForeColor = System.Drawing.Color.White;
-            this.resultadoTextBox.Location = new System.Drawing.Point(2, 46);
+            this.resultadoTextBox.Location = new System.Drawing.Point(3, 50);
             this.resultadoTextBox.Name = "resultadoTextBox";
-            this.resultadoTextBox.Size = new System.Drawing.Size(304, 127);
+            this.resultadoTextBox.Size = new System.Drawing.Size(302, 127);
             this.resultadoTextBox.TabIndex = 0;
             this.resultadoTextBox.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             // 
@@ -438,6 +439,16 @@ namespace calculadora
             this.hamburguer.TabIndex = 23;
             this.hamburguer.UseVisualStyleBackColor = true;
             // 
+            // historicoTemp
+            // 
+            this.historicoTemp.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.historicoTemp.ForeColor = System.Drawing.Color.DarkGray;
+            this.historicoTemp.Location = new System.Drawing.Point(4, 88);
+            this.historicoTemp.Name = "historicoTemp";
+            this.historicoTemp.Size = new System.Drawing.Size(286, 30);
+            this.historicoTemp.TabIndex = 24;
+            this.historicoTemp.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -445,6 +456,7 @@ namespace calculadora
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(307, 493);
+            this.Controls.Add(this.historicoTemp);
             this.Controls.Add(this.hamburguer);
             this.Controls.Add(this.delet1);
             this.Controls.Add(this.classe);
@@ -501,6 +513,7 @@ namespace calculadora
         private RoundButton porcentagem;
         private Label classe;
         private RoundButton hamburguer;
+        private Label historicoTemp;
     }
 
 
