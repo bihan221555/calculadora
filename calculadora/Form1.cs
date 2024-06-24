@@ -1,4 +1,4 @@
-namespace calculadora
+ï»¿namespace calculadora
 {
     public partial class Form1 : Form
     {
@@ -143,15 +143,15 @@ namespace calculadora
 
         private void delet1_Click(object sender, EventArgs e)
         {
-            // Verifica se há texto na caixa de texto
+            // Verifica se hÃ¡ texto na caixa de texto
             if (!string.IsNullOrEmpty(resultadoTextBox.Text))
             {
-                // Obtém o texto atual
+                // ObtÃ©m o texto atual
                 string textoAtual = resultadoTextBox.Text;
-                // Verifica se há caracteres para apagar
+                // Verifica se hÃ¡ caracteres para apagar
                 if (textoAtual.Length > 0)
                 {
-                    // Remove o último caractere da caixa de texto
+                    // Remove o Ãºltimo caractere da caixa de texto
                     resultadoTextBox.Text = textoAtual.Substring(0, textoAtual.Length - 1);
                 }
             }
@@ -166,7 +166,7 @@ namespace calculadora
 
         private void porcentagem_Click(object sender, EventArgs e)
         {
-            // Implemente a funcionalidade desejada para o botão de porcentagem, se necessário
+            // Implemente a funcionalidade desejada para o botÃ£o de porcentagem, se necessÃ¡rio
         }
 
         private void igual_Click(object sender, EventArgs e)
@@ -191,7 +191,7 @@ namespace calculadora
                         }
                         else
                         {
-                            resultadoTextBox.Text = "Error";
+                            resultadoTextBox.Text = "âˆž";
                         }
                         break;
                 }
@@ -201,6 +201,11 @@ namespace calculadora
                     resultadoTextBox.Text = Convert.ToString(resultado);
                 }
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
