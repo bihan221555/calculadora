@@ -59,6 +59,7 @@ namespace calculadora
             this.classe = new System.Windows.Forms.Label();
             this.hamburguer = new calculadora.RoundButton();
             this.historicoTemp = new System.Windows.Forms.Label();
+            this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
             // resultadoTextBox
@@ -433,7 +434,7 @@ namespace calculadora
             this.hamburguer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.hamburguer.Image = ((System.Drawing.Image)(resources.GetObject("hamburguer.Image")));
             this.hamburguer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.hamburguer.Location = new System.Drawing.Point(4, 8);
+            this.hamburguer.Location = new System.Drawing.Point(1, 7);
             this.hamburguer.Name = "hamburguer";
             this.hamburguer.Size = new System.Drawing.Size(37, 33);
             this.hamburguer.TabIndex = 23;
@@ -449,6 +450,14 @@ namespace calculadora
             this.historicoTemp.TabIndex = 24;
             this.historicoTemp.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // sidebar
+            // 
+            this.sidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.sidebar.Location = new System.Drawing.Point(-5, 0);
+            this.sidebar.Name = "sidebar";
+            this.sidebar.Size = new System.Drawing.Size(236, 494);
+            this.sidebar.TabIndex = 25;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -456,8 +465,9 @@ namespace calculadora
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(307, 493);
-            this.Controls.Add(this.historicoTemp);
             this.Controls.Add(this.hamburguer);
+            this.Controls.Add(this.sidebar);
+            this.Controls.Add(this.historicoTemp);
             this.Controls.Add(this.delet1);
             this.Controls.Add(this.classe);
             this.Controls.Add(this.porcentagem);
@@ -514,6 +524,7 @@ namespace calculadora
         private Label classe;
         private RoundButton hamburguer;
         private Label historicoTemp;
+        private FlowLayoutPanel sidebar;
     }
 
 
