@@ -56,8 +56,8 @@ namespace calculadora
             this.delet1 = new calculadora.RoundButton();
             this.clear = new calculadora.RoundButton();
             this.porcentagem = new calculadora.RoundButton();
-            this.hamburguer = new System.Windows.Forms.Button();
             this.classe = new System.Windows.Forms.Label();
+            this.hamburguer = new calculadora.RoundButton();
             this.SuspendLayout();
             // 
             // resultadoTextBox
@@ -65,7 +65,7 @@ namespace calculadora
             this.resultadoTextBox.BackColor = System.Drawing.Color.Transparent;
             this.resultadoTextBox.Font = new System.Drawing.Font("Segoe UI", 35F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.resultadoTextBox.ForeColor = System.Drawing.Color.White;
-            this.resultadoTextBox.Location = new System.Drawing.Point(2, 51);
+            this.resultadoTextBox.Location = new System.Drawing.Point(2, 46);
             this.resultadoTextBox.Name = "resultadoTextBox";
             this.resultadoTextBox.Size = new System.Drawing.Size(304, 127);
             this.resultadoTextBox.TabIndex = 0;
@@ -73,7 +73,7 @@ namespace calculadora
             // 
             // num1
             // 
-            this.num1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("num1.BackgroundImage")));
+            this.num1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.num1.BorderRadius = 10;
             this.num1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.num1.FlatAppearance.BorderSize = 0;
@@ -85,12 +85,12 @@ namespace calculadora
             this.num1.Size = new System.Drawing.Size(67, 52);
             this.num1.TabIndex = 1;
             this.num1.Text = "1";
-            this.num1.UseVisualStyleBackColor = true;
+            this.num1.UseVisualStyleBackColor = false;
             this.num1.Click += new System.EventHandler(this.num1_Click);
             // 
             // num2
             // 
-            this.num2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("num2.BackgroundImage")));
+            this.num2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.num2.BorderRadius = 10;
             this.num2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.num2.FlatAppearance.BorderSize = 0;
@@ -102,12 +102,12 @@ namespace calculadora
             this.num2.Size = new System.Drawing.Size(67, 52);
             this.num2.TabIndex = 2;
             this.num2.Text = "2";
-            this.num2.UseVisualStyleBackColor = true;
+            this.num2.UseVisualStyleBackColor = false;
             this.num2.Click += new System.EventHandler(this.num2_Click);
             // 
             // num3
             // 
-            this.num3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("num3.BackgroundImage")));
+            this.num3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.num3.BorderRadius = 10;
             this.num3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.num3.FlatAppearance.BorderSize = 0;
@@ -119,12 +119,12 @@ namespace calculadora
             this.num3.Size = new System.Drawing.Size(67, 52);
             this.num3.TabIndex = 3;
             this.num3.Text = "3";
-            this.num3.UseVisualStyleBackColor = true;
+            this.num3.UseVisualStyleBackColor = false;
             this.num3.Click += new System.EventHandler(this.num3_Click);
             // 
             // num4
             // 
-            this.num4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("num4.BackgroundImage")));
+            this.num4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.num4.BorderRadius = 10;
             this.num4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.num4.FlatAppearance.BorderSize = 0;
@@ -136,12 +136,12 @@ namespace calculadora
             this.num4.Size = new System.Drawing.Size(67, 52);
             this.num4.TabIndex = 4;
             this.num4.Text = "4";
-            this.num4.UseVisualStyleBackColor = true;
+            this.num4.UseVisualStyleBackColor = false;
             this.num4.Click += new System.EventHandler(this.num4_Click);
             // 
             // num5
             // 
-            this.num5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("num5.BackgroundImage")));
+            this.num5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.num5.BorderRadius = 10;
             this.num5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.num5.FlatAppearance.BorderSize = 0;
@@ -153,12 +153,12 @@ namespace calculadora
             this.num5.Size = new System.Drawing.Size(67, 52);
             this.num5.TabIndex = 5;
             this.num5.Text = "5";
-            this.num5.UseVisualStyleBackColor = true;
+            this.num5.UseVisualStyleBackColor = false;
             this.num5.Click += new System.EventHandler(this.num5_Click);
             // 
             // num6
             // 
-            this.num6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("num6.BackgroundImage")));
+            this.num6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.num6.BorderRadius = 10;
             this.num6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.num6.FlatAppearance.BorderSize = 0;
@@ -170,12 +170,12 @@ namespace calculadora
             this.num6.Size = new System.Drawing.Size(67, 52);
             this.num6.TabIndex = 6;
             this.num6.Text = "6";
-            this.num6.UseVisualStyleBackColor = true;
+            this.num6.UseVisualStyleBackColor = false;
             this.num6.Click += new System.EventHandler(this.num6_Click);
             // 
             // num7
             // 
-            this.num7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("num7.BackgroundImage")));
+            this.num7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.num7.BorderRadius = 10;
             this.num7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.num7.FlatAppearance.BorderSize = 0;
@@ -187,12 +187,12 @@ namespace calculadora
             this.num7.Size = new System.Drawing.Size(67, 52);
             this.num7.TabIndex = 7;
             this.num7.Text = "7";
-            this.num7.UseVisualStyleBackColor = true;
+            this.num7.UseVisualStyleBackColor = false;
             this.num7.Click += new System.EventHandler(this.num7_Click);
             // 
             // num8
             // 
-            this.num8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("num8.BackgroundImage")));
+            this.num8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.num8.BorderRadius = 10;
             this.num8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.num8.FlatAppearance.BorderSize = 0;
@@ -204,12 +204,12 @@ namespace calculadora
             this.num8.Size = new System.Drawing.Size(67, 52);
             this.num8.TabIndex = 8;
             this.num8.Text = "8";
-            this.num8.UseVisualStyleBackColor = true;
+            this.num8.UseVisualStyleBackColor = false;
             this.num8.Click += new System.EventHandler(this.num8_Click);
             // 
             // num9
             // 
-            this.num9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("num9.BackgroundImage")));
+            this.num9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.num9.BorderRadius = 10;
             this.num9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.num9.FlatAppearance.BorderSize = 0;
@@ -221,12 +221,12 @@ namespace calculadora
             this.num9.Size = new System.Drawing.Size(67, 52);
             this.num9.TabIndex = 9;
             this.num9.Text = "9";
-            this.num9.UseVisualStyleBackColor = true;
+            this.num9.UseVisualStyleBackColor = false;
             this.num9.Click += new System.EventHandler(this.num9_Click);
             // 
             // num0
             // 
-            this.num0.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("num0.BackgroundImage")));
+            this.num0.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.num0.BorderRadius = 10;
             this.num0.Cursor = System.Windows.Forms.Cursors.Hand;
             this.num0.FlatAppearance.BorderSize = 0;
@@ -238,12 +238,12 @@ namespace calculadora
             this.num0.Size = new System.Drawing.Size(67, 52);
             this.num0.TabIndex = 10;
             this.num0.Text = "0";
-            this.num0.UseVisualStyleBackColor = true;
+            this.num0.UseVisualStyleBackColor = false;
             this.num0.Click += new System.EventHandler(this.num0_Click);
             // 
             // virgula
             // 
-            this.virgula.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("virgula.BackgroundImage")));
+            this.virgula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.virgula.BorderRadius = 10;
             this.virgula.Cursor = System.Windows.Forms.Cursors.Hand;
             this.virgula.FlatAppearance.BorderSize = 0;
@@ -255,12 +255,12 @@ namespace calculadora
             this.virgula.Size = new System.Drawing.Size(67, 52);
             this.virgula.TabIndex = 11;
             this.virgula.Text = ",";
-            this.virgula.UseVisualStyleBackColor = true;
+            this.virgula.UseVisualStyleBackColor = false;
             this.virgula.Click += new System.EventHandler(this.virgula_Click);
             // 
             // negativar
             // 
-            this.negativar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("negativar.BackgroundImage")));
+            this.negativar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.negativar.BorderRadius = 10;
             this.negativar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.negativar.FlatAppearance.BorderSize = 0;
@@ -272,12 +272,12 @@ namespace calculadora
             this.negativar.Size = new System.Drawing.Size(67, 52);
             this.negativar.TabIndex = 12;
             this.negativar.Text = "+/-";
-            this.negativar.UseVisualStyleBackColor = true;
+            this.negativar.UseVisualStyleBackColor = false;
             this.negativar.Click += new System.EventHandler(this.negativar_Click);
             // 
             // mais
             // 
-            this.mais.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("mais.BackgroundImage")));
+            this.mais.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
             this.mais.BorderRadius = 10;
             this.mais.Cursor = System.Windows.Forms.Cursors.Hand;
             this.mais.FlatAppearance.BorderSize = 0;
@@ -289,12 +289,12 @@ namespace calculadora
             this.mais.Size = new System.Drawing.Size(67, 52);
             this.mais.TabIndex = 13;
             this.mais.Text = "+";
-            this.mais.UseVisualStyleBackColor = true;
+            this.mais.UseVisualStyleBackColor = false;
             this.mais.Click += new System.EventHandler(this.mais_Click);
             // 
             // menos
             // 
-            this.menos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("menos.BackgroundImage")));
+            this.menos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
             this.menos.BorderRadius = 10;
             this.menos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.menos.FlatAppearance.BorderSize = 0;
@@ -306,12 +306,12 @@ namespace calculadora
             this.menos.Size = new System.Drawing.Size(67, 52);
             this.menos.TabIndex = 14;
             this.menos.Text = "-";
-            this.menos.UseVisualStyleBackColor = true;
+            this.menos.UseVisualStyleBackColor = false;
             this.menos.Click += new System.EventHandler(this.menos_Click);
             // 
             // vezes
             // 
-            this.vezes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("vezes.BackgroundImage")));
+            this.vezes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
             this.vezes.BorderRadius = 10;
             this.vezes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.vezes.FlatAppearance.BorderSize = 0;
@@ -323,12 +323,12 @@ namespace calculadora
             this.vezes.Size = new System.Drawing.Size(67, 52);
             this.vezes.TabIndex = 15;
             this.vezes.Text = "X";
-            this.vezes.UseVisualStyleBackColor = true;
+            this.vezes.UseVisualStyleBackColor = false;
             this.vezes.Click += new System.EventHandler(this.vezes_Click);
             // 
             // divisao
             // 
-            this.divisao.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("divisao.BackgroundImage")));
+            this.divisao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
             this.divisao.BorderRadius = 10;
             this.divisao.Cursor = System.Windows.Forms.Cursors.Hand;
             this.divisao.FlatAppearance.BorderSize = 0;
@@ -340,13 +340,12 @@ namespace calculadora
             this.divisao.Size = new System.Drawing.Size(67, 52);
             this.divisao.TabIndex = 16;
             this.divisao.Text = "÷";
-            this.divisao.UseVisualStyleBackColor = true;
+            this.divisao.UseVisualStyleBackColor = false;
             this.divisao.Click += new System.EventHandler(this.divisao_Click);
             // 
             // igual
             // 
-            this.igual.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.igual.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("igual.BackgroundImage")));
+            this.igual.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(188)))), ((int)(((byte)(236)))));
             this.igual.BorderRadius = 10;
             this.igual.Cursor = System.Windows.Forms.Cursors.Hand;
             this.igual.FlatAppearance.BorderSize = 0;
@@ -363,6 +362,7 @@ namespace calculadora
             // 
             // delet1
             // 
+            this.delet1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
             this.delet1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("delet1.BackgroundImage")));
             this.delet1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.delet1.BorderRadius = 10;
@@ -375,12 +375,12 @@ namespace calculadora
             this.delet1.Name = "delet1";
             this.delet1.Size = new System.Drawing.Size(67, 52);
             this.delet1.TabIndex = 18;
-            this.delet1.UseVisualStyleBackColor = true;
+            this.delet1.UseVisualStyleBackColor = false;
             this.delet1.Click += new System.EventHandler(this.delet1_Click);
             // 
             // clear
             // 
-            this.clear.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("clear.BackgroundImage")));
+            this.clear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
             this.clear.BorderRadius = 10;
             this.clear.Cursor = System.Windows.Forms.Cursors.Hand;
             this.clear.FlatAppearance.BorderSize = 0;
@@ -392,12 +392,12 @@ namespace calculadora
             this.clear.Size = new System.Drawing.Size(67, 52);
             this.clear.TabIndex = 19;
             this.clear.Text = "C";
-            this.clear.UseVisualStyleBackColor = true;
+            this.clear.UseVisualStyleBackColor = false;
             this.clear.Click += new System.EventHandler(this.clear_Click);
             // 
             // porcentagem
             // 
-            this.porcentagem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("porcentagem.BackgroundImage")));
+            this.porcentagem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
             this.porcentagem.BorderRadius = 10;
             this.porcentagem.Cursor = System.Windows.Forms.Cursors.Hand;
             this.porcentagem.FlatAppearance.BorderSize = 0;
@@ -409,20 +409,8 @@ namespace calculadora
             this.porcentagem.Size = new System.Drawing.Size(67, 52);
             this.porcentagem.TabIndex = 20;
             this.porcentagem.Text = "%";
-            this.porcentagem.UseVisualStyleBackColor = true;
+            this.porcentagem.UseVisualStyleBackColor = false;
             this.porcentagem.Click += new System.EventHandler(this.porcentagem_Click);
-            // 
-            // hamburguer
-            // 
-            this.hamburguer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hamburguer.BackgroundImage")));
-            this.hamburguer.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hamburguer.FlatAppearance.BorderSize = 0;
-            this.hamburguer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.hamburguer.Location = new System.Drawing.Point(3, 7);
-            this.hamburguer.Name = "hamburguer";
-            this.hamburguer.Size = new System.Drawing.Size(35, 36);
-            this.hamburguer.TabIndex = 21;
-            this.hamburguer.UseVisualStyleBackColor = true;
             // 
             // classe
             // 
@@ -436,18 +424,32 @@ namespace calculadora
             this.classe.TabIndex = 22;
             this.classe.Text = "Padrão";
             // 
+            // hamburguer
+            // 
+            this.hamburguer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.hamburguer.BorderRadius = 10;
+            this.hamburguer.FlatAppearance.BorderSize = 0;
+            this.hamburguer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.hamburguer.Image = ((System.Drawing.Image)(resources.GetObject("hamburguer.Image")));
+            this.hamburguer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.hamburguer.Location = new System.Drawing.Point(4, 8);
+            this.hamburguer.Name = "hamburguer";
+            this.hamburguer.Size = new System.Drawing.Size(37, 33);
+            this.hamburguer.TabIndex = 23;
+            this.hamburguer.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(307, 493);
-            this.Controls.Add(this.classe);
             this.Controls.Add(this.hamburguer);
+            this.Controls.Add(this.delet1);
+            this.Controls.Add(this.classe);
             this.Controls.Add(this.porcentagem);
             this.Controls.Add(this.clear);
-            this.Controls.Add(this.delet1);
             this.Controls.Add(this.igual);
             this.Controls.Add(this.divisao);
             this.Controls.Add(this.vezes);
@@ -497,8 +499,8 @@ namespace calculadora
         private RoundButton delet1;
         private RoundButton clear;
         private RoundButton porcentagem;
-        private Button hamburguer;
         private Label classe;
+        private RoundButton hamburguer;
     }
 
 
@@ -513,7 +515,7 @@ namespace calculadora
 
             // Cores para o botão (fundo, borda e texto)
             Color bgColor = Color.Transparent;
-            Color borderColor = Color.Black;
+            
            
             // Configurações de alinhamento para o texto
             StringFormat format = new StringFormat
@@ -527,9 +529,6 @@ namespace calculadora
 
             // Preenche o fundo do botão
             e.Graphics.FillRectangle(new SolidBrush(bgColor), ClientRectangle);
-
-            // Desenha a borda do botão
-            ControlPaint.DrawBorder(e.Graphics, ClientRectangle, borderColor, ButtonBorderStyle.Solid);
 
             // Desenha o texto no botão
             
