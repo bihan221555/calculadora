@@ -91,7 +91,7 @@
                 sinal = "+";
                 operacaoSelecionada = Operacao.Adicao;
                 valor += Convert.ToDecimal(resultadoTextBox.Text);
-                valor2 = Convert.ToDecimal(resultadoTextBox.Text);
+                historicoTemp.Text = Convert.ToString(valor) + "+";
                 resultadoTextBox.Text = "";
             }
         }
@@ -103,7 +103,7 @@
                 sinal = "-";
                 operacaoSelecionada = Operacao.Subtracao;
                 valor += Convert.ToDecimal(resultadoTextBox.Text);
-                valor2 = Convert.ToDecimal(resultadoTextBox.Text);
+                historicoTemp.Text = Convert.ToString(valor) + "-";
                 resultadoTextBox.Text = "";
             }
         }
@@ -114,8 +114,8 @@
             {
                 sinal = "X";
                 operacaoSelecionada = Operacao.Multiplicacao;
-                valor += Convert.ToDecimal(resultadoTextBox.Text);          
-                valor2 = Convert.ToDecimal(resultadoTextBox.Text);
+                valor += Convert.ToDecimal(resultadoTextBox.Text);
+                historicoTemp.Text = Convert.ToString(valor) + "*";
                 resultadoTextBox.Text = "";
             }
         }
@@ -127,7 +127,7 @@
                 sinal = "/";
                 operacaoSelecionada = Operacao.Divisao;
                 valor += Convert.ToDecimal(resultadoTextBox.Text);
-                valor2 = Convert.ToDecimal(resultadoTextBox.Text);
+                historicoTemp.Text = Convert.ToString(valor) + "/";
                 resultadoTextBox.Text = "";
             }
         }
@@ -161,7 +161,7 @@
         {
             resultadoTextBox.Text = "";
             valor = 0;
-            valor2 = 0;
+            historicoTemp.Text = "";
         }
 
         private void porcentagem_Click(object sender, EventArgs e)
@@ -180,17 +180,21 @@
                 {
                     case Operacao.Adicao:
                         resultado = valor + Convert.ToDecimal(resultadoTextBox.Text);
+                        historicoTemp.Text = Convert.ToString(valor) + " + " + resultadoTextBox.Text + "=";
                         break;
                     case Operacao.Subtracao:
                         resultado = valor - Convert.ToDecimal(resultadoTextBox.Text);
+                        historicoTemp.Text = Convert.ToString(valor) + " - " + resultadoTextBox.Text + "=";
                         break;
                     case Operacao.Multiplicacao:
                         resultado = valor * Convert.ToDecimal(resultadoTextBox.Text);
+                        historicoTemp.Text = Convert.ToString(valor) + " * " + resultadoTextBox.Text + "=";
                         break;
                     case Operacao.Divisao:
                         if (Convert.ToDecimal(resultadoTextBox.Text) != 0)
                         {
                             resultado = valor / Convert.ToDecimal(resultadoTextBox.Text);
+                            historicoTemp.Text = Convert.ToString(valor) + " / " + resultadoTextBox.Text + "=";
                         }
                         else
                         {
