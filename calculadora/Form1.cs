@@ -166,7 +166,10 @@
 
         private void porcentagem_Click(object sender, EventArgs e)
         {
-            // Implemente a funcionalidade desejada para o botão de porcentagem, se necessário
+            if (resultadoTextBox.Text != "")
+            {
+                resultadoTextBox.Text = Convert.ToString(valor * (Convert.ToDecimal(resultadoTextBox.Text) / 100));
+            }
         }
 
         private void igual_Click(object sender, EventArgs e)
@@ -201,11 +204,6 @@
                     resultadoTextBox.Text = Convert.ToString(resultado);
                 }
             }
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
