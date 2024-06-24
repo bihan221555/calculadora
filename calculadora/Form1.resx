@@ -207,6 +207,14 @@
         YII=
 </value>
   </data>
+  <data name="hamburguer.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACUAAAAiCAYAAADYmxC7AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wgAADsIBFShKgAAAAH9JREFUWEft1LEJRCEQRdEtxQoESzETDAQzAyuzLAuZbWCEi9EXXnDSx4URfyEE
+        +xpFUYqiFEUpilIU9XZUa8323lfmnO7mic5HvR0VY7RSypWUkrt5gqNyzrbWulJrdTdP9Kaot6N67+7H
+        SIwx3M0TnY9SFKUoSlGUoihFMcH+Fl8iIGqowJgAAAAASUVORK5CYII=
+</value>
+  </data>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJ4AAABLCAYAAACBdj7nAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
