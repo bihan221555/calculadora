@@ -34,6 +34,7 @@ namespace calculadora
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.resultadoTextBox = new System.Windows.Forms.Label();
             this.num1 = new calculadora.RoundButton();
@@ -60,6 +61,7 @@ namespace calculadora
             this.hamburguer = new calculadora.RoundButton();
             this.historicoTemp = new System.Windows.Forms.Label();
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
+            this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // resultadoTextBox
@@ -453,12 +455,16 @@ namespace calculadora
             // 
             // sidebar
             // 
-            this.sidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.sidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.sidebar.Location = new System.Drawing.Point(-5, 0);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(236, 494);
+            this.sidebar.Size = new System.Drawing.Size(0, 494);
             this.sidebar.TabIndex = 25;
-            this.sidebar.Visible = false;
+            // 
+            // sidebarTransition
+            // 
+            this.sidebarTransition.Interval = 10;
+            this.sidebarTransition.Tick += new System.EventHandler(this.sidebarTransition_Tick);
             // 
             // Form1
             // 
@@ -527,6 +533,7 @@ namespace calculadora
         private RoundButton hamburguer;
         private Label historicoTemp;
         private FlowLayoutPanel sidebar;
+        private System.Windows.Forms.Timer sidebarTransition;
     }
 
 

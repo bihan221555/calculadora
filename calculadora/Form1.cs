@@ -1,4 +1,6 @@
-﻿namespace calculadora
+﻿using iText.Kernel.Colors;
+
+namespace calculadora
 {
     public partial class Form1 : Form
     {
@@ -209,20 +211,36 @@
                 }
             }
         }
-        private void sidebar_Click(object sender, EventArgs e)
-        {
-            resultadoTextBox.Text = "";
-            valor = 0;
-            historicoTemp.Text = "";
-        }
 
+        bool sidebarExpand = false;
+        private void sidebarTransition_Tick(object sender, EventArgs e)
+        {
+            if(sidebarExpand) 
+            {
+                sidebar.Width -=35;
+                hamburguer.BackColor = System.Drawing.Color.FromArgb(34, 30, 30);
+                if (sidebar.Width <= 0)
+                {
+                    
+                    sidebarExpand = false;
+                    sidebarTransition.Stop();
+                }
+            }
+            else
+            {
+                sidebar.Width += 35;
+                hamburguer.BackColor = System.Drawing.Color.FromArgb(48, 44, 44);
+                if (sidebar.Width >= 236)
+                {
+              
+                    sidebarExpand = true;
+                    sidebarTransition.Stop();
+                }
+            }
+        }
         private void hamburguer_Click(object sender, EventArgs e)
         {
-            if (sidebar.Visible == false)
-            {
-                sidebar.Visible = true;
-            }
-            else { sidebar.Visible = false; }
+            sidebarTransition.Start();
         }
     }
 }
