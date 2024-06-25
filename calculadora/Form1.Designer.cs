@@ -439,6 +439,7 @@ namespace calculadora
             this.hamburguer.Size = new System.Drawing.Size(37, 33);
             this.hamburguer.TabIndex = 23;
             this.hamburguer.UseVisualStyleBackColor = true;
+            this.hamburguer.Click += new System.EventHandler(this.hamburguer_Click);
             // 
             // historicoTemp
             // 
@@ -457,6 +458,7 @@ namespace calculadora
             this.sidebar.Name = "sidebar";
             this.sidebar.Size = new System.Drawing.Size(236, 494);
             this.sidebar.TabIndex = 25;
+            this.sidebar.Visible = false;
             // 
             // Form1
             // 

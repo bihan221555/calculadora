@@ -209,5 +209,20 @@
                 }
             }
         }
+        private void sidebar_Click(object sender, EventArgs e)
+        {
+            resultadoTextBox.Text = "";
+            valor = 0;
+            historicoTemp.Text = "";
+        }
+
+        private void hamburguer_Click(object sender, EventArgs e)
+        {
+            if (sidebar.Visible == false)
+            {
+                sidebar.Visible = true;
+            }
+            else { sidebar.Visible = false; }
+        }
     }
 }
