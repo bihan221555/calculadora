@@ -59,7 +59,6 @@
             this.resultadoitbi.Name = "resultadoitbi";
             this.resultadoitbi.Size = new System.Drawing.Size(149, 23);
             this.resultadoitbi.TabIndex = 2;
-            this.resultadoitbi.TextChanged += new System.EventHandler(this.resultadoitbi_TextChanged);
             // 
             // label1
             // 

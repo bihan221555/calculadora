@@ -19,10 +19,13 @@ namespace calculadoraimposto1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            float valorServicoNumber = float.Parse(valorServico.Text);
-            float aliquotaissNumber = float.Parse(aliquotaiss.Text);
-            float resultadoissNumber = (float)(valorServicoNumber *(aliquotaissNumber * 0.01));
-            resultadoiss.Text = resultadoissNumber.ToString();
+            if (valorServico.Text != "" && aliquotaiss.Text != "")
+            {
+                float valorServicoNumber = float.Parse(valorServico.Text);
+                float aliquotaissNumber = float.Parse(aliquotaiss.Text);
+                float resultadoissNumber = (float)(valorServicoNumber * (aliquotaissNumber * 0.01));
+                resultadoiss.Text = resultadoissNumber.ToString();
+            }
         }
 
         private void botaoVoltar_Click(object sender, EventArgs e)

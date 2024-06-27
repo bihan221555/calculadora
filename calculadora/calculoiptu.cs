@@ -34,11 +34,14 @@ namespace calculadoraimposto1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            float m2areaNumber = float.Parse(m2area.Text);
-            float valorRegiaoNumber = float.Parse(valorRegiao.Text);
-            float aliquotaNumber = float.Parse(aliquota.Text);
-            float iptuResultadoNumber = (float) ((m2areaNumber * valorRegiaoNumber) * (aliquotaNumber * 0.01));
-             iptuResultado.Text = iptuResultadoNumber.ToString();
+            if ((m2area.Text != "" && valorRegiao.Text != "" && aliquota.Text != ""))
+                {
+                float m2areaNumber = float.Parse(m2area.Text);
+                float valorRegiaoNumber = float.Parse(valorRegiao.Text);
+                float aliquotaNumber = float.Parse(aliquota.Text);
+                float iptuResultadoNumber = (float)((m2areaNumber * valorRegiaoNumber) * (aliquotaNumber * 0.01));
+                iptuResultado.Text = iptuResultadoNumber.ToString();
+                }
         }
 
         private void botaoVoltar_Click(object sender, EventArgs e)
