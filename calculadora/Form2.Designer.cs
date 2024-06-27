@@ -1,6 +1,6 @@
 ﻿namespace calculadoraimposto1
 {
-    partial class Form1
+    partial class Form2
     {
         /// <summary>
         ///  Required designer variable.
@@ -38,11 +38,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("News706 BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(22, 105);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(281, 38);
+            this.label1.Size = new System.Drawing.Size(277, 40);
             this.label1.TabIndex = 0;
             this.label1.Text = "QUAL O TIPO DE IMPOSTO QUE\r\n   VOCÊ DESEJA CALCULAR?";
             // 
@@ -79,7 +79,7 @@
             this.label4.Text = "Imposto federal";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // Form1
+            // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -89,7 +89,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "Form2";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
