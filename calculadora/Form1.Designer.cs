@@ -589,7 +589,7 @@ namespace calculadora
             this.Controls.Add(this.classe);
             this.DoubleBuffered = true;
             this.Name = "calculadoraPadrao";
-            this.Text = "Calculadora";
+            this.Text = "c";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.sidebar.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
