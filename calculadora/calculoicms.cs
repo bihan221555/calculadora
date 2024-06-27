@@ -26,5 +26,10 @@ namespace calculadoraimposto1
         {
            
         }
+
+        private void calculoicms_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
