@@ -1,4 +1,5 @@
-﻿using iText.Kernel.Colors;
+﻿using calculadoraimposto1;
+using iText.Kernel.Colors;
 
 namespace calculadora
 {
@@ -272,6 +273,20 @@ namespace calculadora
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void impostoRendaButton_Click(object sender, EventArgs e)
+        {
+            // Fecha o Form1
+            this.Hide(); // Esconde o Form1
+                         // ou this.Close(); // Fecha completamente o Form1 (dependendo do comportamento desejado)
+
+            // Cria uma instância do Form2 (se ainda não existir)
+            Form2 form2 = new Form2();
+
+            // Mostra o Form2
+            form2.Show();
 
         }
     }

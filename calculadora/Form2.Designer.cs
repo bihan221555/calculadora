@@ -1,6 +1,6 @@
 ﻿namespace calculadoraimposto1
 {
-    partial class Form1
+    partial class Form2
     {
         /// <summary>
         ///  Required designer variable.
@@ -82,7 +82,7 @@
             this.label4.Text = "Imposto federal";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // Form1
+            // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -92,7 +92,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "Form2";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();

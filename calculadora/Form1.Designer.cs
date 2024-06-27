@@ -472,7 +472,7 @@ namespace calculadora
             this.sidebar.Controls.Add(this.label1);
             this.sidebar.Location = new System.Drawing.Point(-5, 46);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(0, 448);
+            this.sidebar.Size = new System.Drawing.Size(236, 448);
             this.sidebar.TabIndex = 25;
             // 
             // panel2
@@ -526,6 +526,7 @@ namespace calculadora
             this.impostoRendaButton.Text = "Imposto de renda";
             this.impostoRendaButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.impostoRendaButton.UseVisualStyleBackColor = false;
+            this.impostoRendaButton.Click += new System.EventHandler(this.impostoRendaButton_Click);
             // 
             // label1
             // 
