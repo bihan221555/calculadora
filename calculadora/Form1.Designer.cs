@@ -62,9 +62,9 @@ namespace calculadora
             this.historicoTemp = new System.Windows.Forms.Label();
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.padraoButton = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.impostoRendaButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
             this.sidebar2 = new System.Windows.Forms.Panel();
@@ -459,7 +459,7 @@ namespace calculadora
             this.historicoTemp.ForeColor = System.Drawing.Color.DarkGray;
             this.historicoTemp.Location = new System.Drawing.Point(3, 82);
             this.historicoTemp.Name = "historicoTemp";
-            this.historicoTemp.Size = new System.Drawing.Size(286, 30);
+            this.historicoTemp.Size = new System.Drawing.Size(236, 30);
             this.historicoTemp.TabIndex = 24;
             this.historicoTemp.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -477,37 +477,11 @@ namespace calculadora
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.padraoButton);
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(236, 35);
+            this.panel2.Size = new System.Drawing.Size(233, 35);
             this.panel2.TabIndex = 29;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(-13, -15);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(20, 0, 145, 5);
-            this.button1.Size = new System.Drawing.Size(246, 70);
-            this.button1.TabIndex = 27;
-            this.button1.Text = "Padrão";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.padraoButton);
-            this.panel1.Location = new System.Drawing.Point(3, 44);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(236, 35);
-            this.panel1.TabIndex = 26;
             // 
             // padraoButton
             // 
@@ -520,12 +494,38 @@ namespace calculadora
             this.padraoButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.padraoButton.Location = new System.Drawing.Point(-13, -15);
             this.padraoButton.Name = "padraoButton";
-            this.padraoButton.Padding = new System.Windows.Forms.Padding(20, 0, 84, 5);
+            this.padraoButton.Padding = new System.Windows.Forms.Padding(20, 0, 140, 5);
             this.padraoButton.Size = new System.Drawing.Size(246, 70);
             this.padraoButton.TabIndex = 27;
-            this.padraoButton.Text = "Imposto de renda";
+            this.padraoButton.Text = "Padrão";
             this.padraoButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.padraoButton.UseVisualStyleBackColor = false;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.impostoRendaButton);
+            this.panel1.Location = new System.Drawing.Point(3, 44);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(236, 35);
+            this.panel1.TabIndex = 26;
+            // 
+            // impostoRendaButton
+            // 
+            this.impostoRendaButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            this.impostoRendaButton.FlatAppearance.BorderSize = 0;
+            this.impostoRendaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.impostoRendaButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.impostoRendaButton.ForeColor = System.Drawing.Color.White;
+            this.impostoRendaButton.Image = ((System.Drawing.Image)(resources.GetObject("impostoRendaButton.Image")));
+            this.impostoRendaButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.impostoRendaButton.Location = new System.Drawing.Point(-13, -15);
+            this.impostoRendaButton.Name = "impostoRendaButton";
+            this.impostoRendaButton.Padding = new System.Windows.Forms.Padding(20, 0, 80, 5);
+            this.impostoRendaButton.Size = new System.Drawing.Size(246, 70);
+            this.impostoRendaButton.TabIndex = 27;
+            this.impostoRendaButton.Text = "Imposto de renda";
+            this.impostoRendaButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.impostoRendaButton.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -628,11 +628,11 @@ namespace calculadora
         private FlowLayoutPanel sidebar;
         private System.Windows.Forms.Timer sidebarTransition;
         private Panel panel1;
-        private Button padraoButton;
+        private Button impostoRendaButton;
         private Panel sidebar2;
         private System.Windows.Forms.Timer sidebarTransition2;
         private Panel panel2;
-        private Button button1;
+        private Button padraoButton;
         private Label label1;
     }
 

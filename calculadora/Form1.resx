@@ -91,7 +91,7 @@
         JyW7qHxp3AAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="padraoButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAABGdBTUEAALGPC/xhBQAAAS1JREFUSEvt
         ldENwjAMRDsCIzACI3QURmAD2AA2gE3oBrABbAAbFL/qLFmoauOA+MLSKU58lwshSZt/fDX6vj8IuyQG
@@ -102,7 +102,7 @@
         un0AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="padraoButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="impostoRendaButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAABGdBTUEAALGPC/xhBQAAAYZJREFUSEvV
         lutRAzEMhK8ESkgJKYEOoIR0QDqAEtIBdJCUkFLSybGfZmXyuAt2fD9gZ3bOkmXJlm35hj+HcRyfxXdx
