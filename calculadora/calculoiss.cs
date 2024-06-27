@@ -31,5 +31,10 @@ namespace calculadoraimposto1
             form.Show();
             this.Hide();
         }
+
+        private void calculoiss_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

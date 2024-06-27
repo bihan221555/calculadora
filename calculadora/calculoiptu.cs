@@ -47,5 +47,10 @@ namespace calculadoraimposto1
             form.Show();
             this.Hide();
         }
+
+        private void calculoiptu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

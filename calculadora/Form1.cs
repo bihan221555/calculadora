@@ -3,7 +3,7 @@ using iText.Kernel.Colors;
 
 namespace calculadora
 {
-    public partial class Form1 : Form
+    public partial class calculadoraPadrao : Form
     {
         public decimal resultado { get; set; }
         public decimal valor { get; set; }
@@ -20,7 +20,7 @@ namespace calculadora
             Divisao
         }
 
-        public Form1()
+        public calculadoraPadrao()
         {
             InitializeComponent();
         }

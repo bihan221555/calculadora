@@ -41,21 +41,21 @@
             // 
             // valorvenalitbi
             // 
-            this.valorvenalitbi.Location = new System.Drawing.Point(296, 148);
+            this.valorvenalitbi.Location = new System.Drawing.Point(74, 169);
             this.valorvenalitbi.Name = "valorvenalitbi";
             this.valorvenalitbi.Size = new System.Drawing.Size(149, 23);
             this.valorvenalitbi.TabIndex = 0;
             // 
             // aliquotaitbi
             // 
-            this.aliquotaitbi.Location = new System.Drawing.Point(296, 230);
+            this.aliquotaitbi.Location = new System.Drawing.Point(74, 251);
             this.aliquotaitbi.Name = "aliquotaitbi";
             this.aliquotaitbi.Size = new System.Drawing.Size(149, 23);
             this.aliquotaitbi.TabIndex = 1;
             // 
             // resultadoitbi
             // 
-            this.resultadoitbi.Location = new System.Drawing.Point(296, 362);
+            this.resultadoitbi.Location = new System.Drawing.Point(74, 383);
             this.resultadoitbi.Name = "resultadoitbi";
             this.resultadoitbi.Size = new System.Drawing.Size(149, 23);
             this.resultadoitbi.TabIndex = 2;
@@ -65,27 +65,30 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("News706 BT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(311, 112);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label1.Location = new System.Drawing.Point(89, 133);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 22);
+            this.label1.Size = new System.Drawing.Size(120, 22);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Valor venal";
+            this.label1.Text = "Valor venal:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("News706 BT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(324, 192);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label2.Location = new System.Drawing.Point(102, 213);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(89, 22);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Aliquota";
+            this.label2.Text = "Alíquota";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("News706 BT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(273, 326);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label3.Location = new System.Drawing.Point(51, 347);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(193, 22);
             this.label3.TabIndex = 5;
@@ -93,7 +96,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(324, 275);
+            this.button1.Location = new System.Drawing.Point(102, 296);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(99, 33);
             this.button1.TabIndex = 6;
@@ -104,10 +107,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("News706 BT", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(289, 46);
+            this.label4.Font = new System.Drawing.Font("Noto Naskh Arabic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label4.Location = new System.Drawing.Point(51, 67);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(193, 35);
+            this.label4.Size = new System.Drawing.Size(218, 49);
             this.label4.TabIndex = 7;
             this.label4.Text = "Calculo ITBI";
             // 
@@ -115,7 +119,8 @@
             // 
             this.botaoVoltar.AutoSize = true;
             this.botaoVoltar.Font = new System.Drawing.Font("News706 BT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.botaoVoltar.Location = new System.Drawing.Point(23, 27);
+            this.botaoVoltar.ForeColor = System.Drawing.Color.Silver;
+            this.botaoVoltar.Location = new System.Drawing.Point(12, 9);
             this.botaoVoltar.Name = "botaoVoltar";
             this.botaoVoltar.Size = new System.Drawing.Size(45, 15);
             this.botaoVoltar.TabIndex = 8;
@@ -126,8 +131,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gray;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.ClientSize = new System.Drawing.Size(307, 493);
             this.Controls.Add(this.botaoVoltar);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button1);
