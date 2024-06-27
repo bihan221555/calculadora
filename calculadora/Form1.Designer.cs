@@ -432,7 +432,7 @@ namespace calculadora
             this.classe.BackColor = System.Drawing.Color.Transparent;
             this.classe.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.classe.ForeColor = System.Drawing.Color.White;
-            this.classe.Location = new System.Drawing.Point(168, 120);
+            this.classe.Location = new System.Drawing.Point(44, 10);
             this.classe.Name = "classe";
             this.classe.Size = new System.Drawing.Size(72, 25);
             this.classe.TabIndex = 22;
@@ -472,7 +472,7 @@ namespace calculadora
             this.sidebar.Controls.Add(this.label1);
             this.sidebar.Location = new System.Drawing.Point(-5, 46);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(236, 448);
+            this.sidebar.Size = new System.Drawing.Size(0, 448);
             this.sidebar.TabIndex = 25;
             // 
             // panel2
@@ -565,7 +565,6 @@ namespace calculadora
             this.Controls.Add(this.hamburguer);
             this.Controls.Add(this.sidebar);
             this.Controls.Add(this.delet1);
-            this.Controls.Add(this.classe);
             this.Controls.Add(this.porcentagem);
             this.Controls.Add(this.clear);
             this.Controls.Add(this.igual);
@@ -587,6 +586,7 @@ namespace calculadora
             this.Controls.Add(this.num1);
             this.Controls.Add(this.resultadoTextBox);
             this.Controls.Add(this.sidebar2);
+            this.Controls.Add(this.classe);
             this.DoubleBuffered = true;
             this.Name = "Form1";
             this.Text = "Calculadora";
