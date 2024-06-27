@@ -62,33 +62,33 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("News706 BT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label3.Location = new System.Drawing.Point(51, 362);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(193, 22);
+            this.label3.Size = new System.Drawing.Size(194, 24);
             this.label3.TabIndex = 13;
             this.label3.Text = "Imposto a ser pago:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("News706 BT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label2.Location = new System.Drawing.Point(102, 224);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 22);
+            this.label2.Size = new System.Drawing.Size(92, 24);
             this.label2.TabIndex = 12;
             this.label2.Text = "Alíquota:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("News706 BT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label1.Location = new System.Drawing.Point(78, 143);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(144, 22);
+            this.label1.Size = new System.Drawing.Size(143, 24);
             this.label1.TabIndex = 11;
             this.label1.Text = "Valor produto:";
             // 
@@ -129,6 +129,7 @@
             this.Controls.Add(this.aliquotaicms);
             this.Controls.Add(this.valorProdutoicms);
             this.Name = "calculoicms";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "calculoicms";
             this.Load += new System.EventHandler(this.calculoicms_Load);
             this.ResumeLayout(false);

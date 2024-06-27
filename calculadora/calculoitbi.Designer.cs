@@ -64,33 +64,33 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("News706 BT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label1.Location = new System.Drawing.Point(89, 133);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 22);
+            this.label1.Size = new System.Drawing.Size(121, 24);
             this.label1.TabIndex = 3;
             this.label1.Text = "Valor venal:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("News706 BT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label2.Location = new System.Drawing.Point(102, 213);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 22);
+            this.label2.Size = new System.Drawing.Size(86, 24);
             this.label2.TabIndex = 4;
             this.label2.Text = "Alíquota";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("News706 BT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label3.Location = new System.Drawing.Point(51, 347);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(193, 22);
+            this.label3.Size = new System.Drawing.Size(194, 24);
             this.label3.TabIndex = 5;
             this.label3.Text = "Imposto a ser pago:";
             // 
@@ -118,11 +118,11 @@
             // botaoVoltar
             // 
             this.botaoVoltar.AutoSize = true;
-            this.botaoVoltar.Font = new System.Drawing.Font("News706 BT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.botaoVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.botaoVoltar.ForeColor = System.Drawing.Color.Silver;
             this.botaoVoltar.Location = new System.Drawing.Point(12, 9);
             this.botaoVoltar.Name = "botaoVoltar";
-            this.botaoVoltar.Size = new System.Drawing.Size(45, 15);
+            this.botaoVoltar.Size = new System.Drawing.Size(48, 16);
             this.botaoVoltar.TabIndex = 8;
             this.botaoVoltar.Text = "Voltar";
             this.botaoVoltar.Click += new System.EventHandler(this.botaoVoltar_Click);
@@ -143,6 +143,7 @@
             this.Controls.Add(this.aliquotaitbi);
             this.Controls.Add(this.valorvenalitbi);
             this.Name = "calculoitbi";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "calculoitbi";
             this.ResumeLayout(false);
             this.PerformLayout();
