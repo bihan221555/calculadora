@@ -17,12 +17,16 @@ namespace calculadoraimposto1
             InitializeComponent();
         }
 
+       
         private void button1_Click(object sender, EventArgs e)
         {
-            double valorvenalitbiNumber = double.Parse(valorvenalitbi.Text);
-            double aliquotaitbiNumber = double.Parse(aliquotaitbi.Text);
-            double resultadoitbiNumber =  valorvenalitbiNumber * (aliquotaitbiNumber* 0.01);
-            resultadoitbi.Text = resultadoitbiNumber.ToString();
+            if (valorvenalitbi.Text != "" && aliquotaitbi.Text != "")
+            {
+                double valorvenalitbiNumber = double.Parse(valorvenalitbi.Text);
+                double aliquotaitbiNumber = double.Parse(aliquotaitbi.Text);
+                double resultadoitbiNumber = valorvenalitbiNumber * (aliquotaitbiNumber * 0.01);
+                resultadoitbi.Text = resultadoitbiNumber.ToString();
+            }
         }
 
         private void botaoVoltar_Click(object sender, EventArgs e)
@@ -30,11 +34,6 @@ namespace calculadoraimposto1
             impostomunicipal form = new impostomunicipal();
             form.Show();
             this.Hide();
-        }
-
-        private void resultadoitbi_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
