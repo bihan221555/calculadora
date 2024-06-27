@@ -61,7 +61,17 @@ namespace calculadora
             this.hamburguer = new calculadora.RoundButton();
             this.historicoTemp = new System.Windows.Forms.Label();
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.padraoButton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
+            this.sidebar2 = new System.Windows.Forms.Panel();
+            this.sidebarTransition2 = new System.Windows.Forms.Timer(this.components);
+            this.sidebar.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // resultadoTextBox
@@ -69,7 +79,7 @@ namespace calculadora
             this.resultadoTextBox.BackColor = System.Drawing.Color.Transparent;
             this.resultadoTextBox.Font = new System.Drawing.Font("Segoe UI", 35F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.resultadoTextBox.ForeColor = System.Drawing.Color.White;
-            this.resultadoTextBox.Location = new System.Drawing.Point(3, 50);
+            this.resultadoTextBox.Location = new System.Drawing.Point(1, 170);
             this.resultadoTextBox.Name = "resultadoTextBox";
             this.resultadoTextBox.Size = new System.Drawing.Size(302, 127);
             this.resultadoTextBox.TabIndex = 0;
@@ -422,7 +432,7 @@ namespace calculadora
             this.classe.BackColor = System.Drawing.Color.Transparent;
             this.classe.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.classe.ForeColor = System.Drawing.Color.White;
-            this.classe.Location = new System.Drawing.Point(39, 10);
+            this.classe.Location = new System.Drawing.Point(168, 120);
             this.classe.Name = "classe";
             this.classe.Size = new System.Drawing.Size(72, 25);
             this.classe.TabIndex = 22;
@@ -447,7 +457,7 @@ namespace calculadora
             // 
             this.historicoTemp.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.historicoTemp.ForeColor = System.Drawing.Color.DarkGray;
-            this.historicoTemp.Location = new System.Drawing.Point(4, 88);
+            this.historicoTemp.Location = new System.Drawing.Point(3, 82);
             this.historicoTemp.Name = "historicoTemp";
             this.historicoTemp.Size = new System.Drawing.Size(286, 30);
             this.historicoTemp.TabIndex = 24;
@@ -456,15 +466,94 @@ namespace calculadora
             // sidebar
             // 
             this.sidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.sidebar.Location = new System.Drawing.Point(-5, 0);
+            this.sidebar.Controls.Add(this.panel2);
+            this.sidebar.Controls.Add(this.panel1);
+            this.sidebar.Controls.Add(this.historicoTemp);
+            this.sidebar.Controls.Add(this.label1);
+            this.sidebar.Location = new System.Drawing.Point(-5, 46);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(0, 494);
+            this.sidebar.Size = new System.Drawing.Size(236, 448);
             this.sidebar.TabIndex = 25;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(236, 35);
+            this.panel2.TabIndex = 29;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(-13, -15);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(20, 0, 145, 5);
+            this.button1.Size = new System.Drawing.Size(246, 70);
+            this.button1.TabIndex = 27;
+            this.button1.Text = "Padrão";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.padraoButton);
+            this.panel1.Location = new System.Drawing.Point(3, 44);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(236, 35);
+            this.panel1.TabIndex = 26;
+            // 
+            // padraoButton
+            // 
+            this.padraoButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            this.padraoButton.FlatAppearance.BorderSize = 0;
+            this.padraoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.padraoButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.padraoButton.ForeColor = System.Drawing.Color.White;
+            this.padraoButton.Image = ((System.Drawing.Image)(resources.GetObject("padraoButton.Image")));
+            this.padraoButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.padraoButton.Location = new System.Drawing.Point(-13, -15);
+            this.padraoButton.Name = "padraoButton";
+            this.padraoButton.Padding = new System.Windows.Forms.Padding(20, 0, 84, 5);
+            this.padraoButton.Size = new System.Drawing.Size(246, 70);
+            this.padraoButton.TabIndex = 27;
+            this.padraoButton.Text = "Imposto de renda";
+            this.padraoButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.padraoButton.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.DarkGray;
+            this.label1.Location = new System.Drawing.Point(3, 112);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(286, 30);
+            this.label1.TabIndex = 28;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // sidebarTransition
             // 
-            this.sidebarTransition.Interval = 10;
+            this.sidebarTransition.Interval = 1;
             this.sidebarTransition.Tick += new System.EventHandler(this.sidebarTransition_Tick);
+            // 
+            // sidebar2
+            // 
+            this.sidebar2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            this.sidebar2.Location = new System.Drawing.Point(-5, -2);
+            this.sidebar2.Name = "sidebar2";
+            this.sidebar2.Size = new System.Drawing.Size(0, 48);
+            this.sidebar2.TabIndex = 27;
+            // 
+            // sidebarTransition2
+            // 
+            this.sidebarTransition2.Interval = 1;
+            this.sidebarTransition2.Tick += new System.EventHandler(this.sidebarTransition2_Tick);
             // 
             // Form1
             // 
@@ -475,7 +564,6 @@ namespace calculadora
             this.ClientSize = new System.Drawing.Size(307, 493);
             this.Controls.Add(this.hamburguer);
             this.Controls.Add(this.sidebar);
-            this.Controls.Add(this.historicoTemp);
             this.Controls.Add(this.delet1);
             this.Controls.Add(this.classe);
             this.Controls.Add(this.porcentagem);
@@ -498,9 +586,14 @@ namespace calculadora
             this.Controls.Add(this.num2);
             this.Controls.Add(this.num1);
             this.Controls.Add(this.resultadoTextBox);
+            this.Controls.Add(this.sidebar2);
             this.DoubleBuffered = true;
             this.Name = "Form1";
             this.Text = "Calculadora";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.sidebar.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -534,6 +627,13 @@ namespace calculadora
         private Label historicoTemp;
         private FlowLayoutPanel sidebar;
         private System.Windows.Forms.Timer sidebarTransition;
+        private Panel panel1;
+        private Button padraoButton;
+        private Panel sidebar2;
+        private System.Windows.Forms.Timer sidebarTransition2;
+        private Panel panel2;
+        private Button button1;
+        private Label label1;
     }
 
 

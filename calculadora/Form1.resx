@@ -91,7 +91,33 @@
         JyW7qHxp3AAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAABGdBTUEAALGPC/xhBQAAAS1JREFUSEvt
+        ldENwjAMRDsCIzACI3QURmAD2AA2gE3oBrABbAAbFL/qLFmoauOA+MLSKU58lwshSZt/fDX6vj8IuyQG
+        naaZD0RK0yGzpbrTgZGhNXTKSwAXDXmrqabDybQamo2oodXwdATR2bAtBNwqo4WEGaBJGy0FxKC0/5HR
+        ysCK3ydmjFq9kdJ0pI0gG+6Gq/pPA0c4gjFqcOCiqTKKbafaYBLyMW7KiL33la9D7s/TWA1NlRF3A/hk
+        5G4Ua55XGf1s6xDdDBf1+eNZtW8T+cNADQ7cKiPuhD8vPgE5WwVizfP8PYJsOBk26nOEGfNfRO5HHw5c
+        X1DaiO05qs89YdVuRM52UYMDN23EqeJZQQj8uQGcLDBWQ4O2+MMHeW/wvS8FmvJP+T/mo2leohv5UNB0
+        un0AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="padraoButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAABGdBTUEAALGPC/xhBQAAAYZJREFUSEvV
+        lutRAzEMhK8ESkgJKYEOoIR0QDqAEtIBdJCUkFLSybGfZmXyuAt2fD9gZ3bOkmXJlm35hj+HcRyfxXdx
+        7++Tu5aDnH6YK5GAa/FA2yb9sOMMkty4j2DLrMzOYiWWX/OLToyg3ZAjVlNSpPYqv+jpj45eyNHRTteW
+        r1e0tcy+cUjgC7pqaACOTuJWvNgLZJFJJLEhGJPaiV82vQ8MRdLGzHGUJy+Js1ithwQkEwz974dERgSJ
+        VLWgKog6c5NJQfNJYrxIoPmU2YAAGNfl9gwehw/2DT/TF9lGGJD75tuuMQQq6VKbu0cKd1b9QMqNeLLY
+        BXz5ewzFNWY7GiE/ud+zgW6X+gBqAh3c7IL8ZF2cX5HYXY3lg0PFgYjydAN1dBdJjb9/lxIyYlVROBOS
+        455YLJiw4x7Vv1EyJNibxXRwUdOAdCU4bZEgbaVLA7jA+QTMrej8naI+tu8vTsTYL7eZbf6YfFouF1zt
+        x/dWg5klpWQy79JRTeiHyzzp/wTD8A1yESfMW8eUcgAAAABJRU5ErkJggg==
+</value>
+  </data>
   <metadata name="sidebarTransition.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
+  </metadata>
+  <metadata name="sidebarTransition2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>162, 21</value>
   </metadata>
 </root>
