@@ -28,5 +28,10 @@ namespace calculadoraimposto1
             form.Show();
             this.Hide();
         }
+
+        private void impostofederal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
