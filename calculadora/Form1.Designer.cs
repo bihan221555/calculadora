@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace calculadora
 {
-    partial class Form1
+    partial class calculadoraPadrao
     {
         /// <summary>
         ///  Required designer variable.
@@ -35,7 +35,7 @@ namespace calculadora
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(calculadoraPadrao));
             this.resultadoTextBox = new System.Windows.Forms.Label();
             this.num1 = new calculadora.RoundButton();
             this.num2 = new calculadora.RoundButton();
@@ -79,7 +79,7 @@ namespace calculadora
             this.resultadoTextBox.BackColor = System.Drawing.Color.Transparent;
             this.resultadoTextBox.Font = new System.Drawing.Font("Segoe UI", 35F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.resultadoTextBox.ForeColor = System.Drawing.Color.White;
-            this.resultadoTextBox.Location = new System.Drawing.Point(1, 170);
+            this.resultadoTextBox.Location = new System.Drawing.Point(3, 49);
             this.resultadoTextBox.Name = "resultadoTextBox";
             this.resultadoTextBox.Size = new System.Drawing.Size(302, 127);
             this.resultadoTextBox.TabIndex = 0;
@@ -555,7 +555,7 @@ namespace calculadora
             this.sidebarTransition2.Interval = 1;
             this.sidebarTransition2.Tick += new System.EventHandler(this.sidebarTransition2_Tick);
             // 
-            // Form1
+            // calculadoraPadrao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -588,7 +588,7 @@ namespace calculadora
             this.Controls.Add(this.sidebar2);
             this.Controls.Add(this.classe);
             this.DoubleBuffered = true;
-            this.Name = "Form1";
+            this.Name = "calculadoraPadrao";
             this.Text = "Calculadora";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.sidebar.ResumeLayout(false);
