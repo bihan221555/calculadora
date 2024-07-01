@@ -60,10 +60,21 @@
   <metadata name="sidebarTransition.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="hamburguer.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABsAAAANCAYAAABYWxXTAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
+        MAAA6mAAADqYAAAXcJy6UTwAAAAHdElNRQfoBhgTAyQlYBOkAAABA0lEQVQ4T6XTS0rDUBTG8ZtZUnUP
+        1nbqwA1U0GHrwO7OUkWct4IP0E0UlyEuIU//H5xAiOHmXjzwIyE5jyQ31/WjKAqX57mr6zptmuaoYxJA
+        eSm1qreOnrDEU4ru8IxdhD021J/FDJtS9IhPfBidD2nvtzlPmMM6ekJJSJDhBMd2DJXxsEnMm7VD/2U0
+        bJgWe4EbrDqWPd17ovxL6Eexjp6wYeckH/CD7wjK/8IFrKMnbJie7ArrEbc9unYNrbN19IQNG1yDWKNR
+        VZUry1ID+5s6VKoeMhr2ZtpnW7zhdcDLAF1X/gNmsI6e6Ay7xzvUIJTyw4cpybSbOlbGJ0z+fkbnfgEl
+        JyW7qHxp3AAAAABJRU5ErkJggg==
+</value>
+  </data>
   <metadata name="sidebarTransition2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>162, 21</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="delet1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEMAAAAyCAYAAAAHtGYXAAAABGdBTUEAALGPC/xhBQAAA95JREFUaEPt
@@ -84,17 +95,6 @@
         F7mdQ7Nj3llcz/T399+hNba2tlZ5WeMyOjr6iDwE2YDeLjUNaVJPpzz+aEO2Ic/yo29sr/gvjY2NV6en
         p58jI6zjg2vHEJ9qZBD/8vLyK17m+8FsNv+MNHoiLi7OihI8JTw8PJr+yUJwNVNFiu+UY+gfjoqK+oXS
         Lb5yf+RHBUEQBEEQBEEQBEEQ3mEyvQUUYOE+jv49WgAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="hamburguer.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABsAAAANCAYAAABYWxXTAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
-        MAAA6mAAADqYAAAXcJy6UTwAAAAHdElNRQfoBhgTAyQlYBOkAAABA0lEQVQ4T6XTS0rDUBTG8ZtZUnUP
-        1nbqwA1U0GHrwO7OUkWct4IP0E0UlyEuIU//H5xAiOHmXjzwIyE5jyQ31/WjKAqX57mr6zptmuaoYxJA
-        eSm1qreOnrDEU4ru8IxdhD021J/FDJtS9IhPfBidD2nvtzlPmMM6ekJJSJDhBMd2DJXxsEnMm7VD/2U0
-        bJgWe4EbrDqWPd17ovxL6Eexjp6wYeckH/CD7wjK/8IFrKMnbJie7ArrEbc9unYNrbN19IQNG1yDWKNR
-        VZUry1ID+5s6VKoeMhr2ZtpnW7zhdcDLAF1X/gNmsI6e6Ay7xzvUIJTyw4cpybSbOlbGJ0z+fkbnfgEl
-        JyW7qHxp3AAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="impostoRendaButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

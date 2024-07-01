@@ -59,9 +59,9 @@ namespace calculadora
             this.classe = new System.Windows.Forms.Label();
             this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
             this.sidebar2 = new System.Windows.Forms.Panel();
+            this.hamburguer = new calculadora.RoundButton();
             this.sidebarTransition2 = new System.Windows.Forms.Timer(this.components);
             this.delet1 = new calculadora.RoundButton();
-            this.hamburguer = new calculadora.RoundButton();
             this.label1 = new System.Windows.Forms.Label();
             this.historicoTemp = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -414,7 +414,7 @@ namespace calculadora
             this.classe.BackColor = System.Drawing.Color.Transparent;
             this.classe.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.classe.ForeColor = System.Drawing.Color.White;
-            this.classe.Location = new System.Drawing.Point(44, 10);
+            this.classe.Location = new System.Drawing.Point(46, 10);
             this.classe.Name = "classe";
             this.classe.Size = new System.Drawing.Size(72, 25);
             this.classe.TabIndex = 22;
@@ -428,10 +428,25 @@ namespace calculadora
             // sidebar2
             // 
             this.sidebar2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.sidebar2.Location = new System.Drawing.Point(-5, -2);
+            this.sidebar2.Location = new System.Drawing.Point(-5, -1);
             this.sidebar2.Name = "sidebar2";
             this.sidebar2.Size = new System.Drawing.Size(0, 48);
             this.sidebar2.TabIndex = 27;
+            // 
+            // hamburguer
+            // 
+            this.hamburguer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.hamburguer.BorderRadius = 10;
+            this.hamburguer.FlatAppearance.BorderSize = 0;
+            this.hamburguer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.hamburguer.Image = ((System.Drawing.Image)(resources.GetObject("hamburguer.Image")));
+            this.hamburguer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.hamburguer.Location = new System.Drawing.Point(3, 7);
+            this.hamburguer.Name = "hamburguer";
+            this.hamburguer.Size = new System.Drawing.Size(37, 33);
+            this.hamburguer.TabIndex = 23;
+            this.hamburguer.UseVisualStyleBackColor = true;
+            this.hamburguer.Click += new System.EventHandler(this.hamburguer_Click);
             // 
             // sidebarTransition2
             // 
@@ -455,21 +470,6 @@ namespace calculadora
             this.delet1.TabIndex = 18;
             this.delet1.UseVisualStyleBackColor = false;
             this.delet1.Click += new System.EventHandler(this.delet1_Click);
-            // 
-            // hamburguer
-            // 
-            this.hamburguer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.hamburguer.BorderRadius = 10;
-            this.hamburguer.FlatAppearance.BorderSize = 0;
-            this.hamburguer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.hamburguer.Image = ((System.Drawing.Image)(resources.GetObject("hamburguer.Image")));
-            this.hamburguer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.hamburguer.Location = new System.Drawing.Point(1, 7);
-            this.hamburguer.Name = "hamburguer";
-            this.hamburguer.Size = new System.Drawing.Size(37, 33);
-            this.hamburguer.TabIndex = 23;
-            this.hamburguer.UseVisualStyleBackColor = true;
-            this.hamburguer.Click += new System.EventHandler(this.hamburguer_Click);
             // 
             // label1
             // 

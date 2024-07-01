@@ -278,16 +278,9 @@ namespace calculadora
 
         private void impostoRendaButton_Click(object sender, EventArgs e)
         {
-            // Fecha o Form1
-            this.Hide(); // Esconde o Form1
-                         // ou this.Close(); // Fecha completamente o Form1 (dependendo do comportamento desejado)
-
-            // Cria uma instância do Form2 (se ainda não existir)
+            this.Hide(); 
             Form2 form2 = new Form2();
-
-            // Mostra o Form2
             form2.Show();
-
         }
 
         private void sidebar_Paint(object sender, PaintEventArgs e)
