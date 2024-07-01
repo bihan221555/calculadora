@@ -100,7 +100,5 @@ namespace calculadoraimposto1
                 resultadoitbi.Text = resultadoitbiNumber.ToString();
             }
         }
-
-
     }
 }

@@ -37,7 +37,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.resultadoiss = new System.Windows.Forms.Label();
-            this.Button1 = new calculadora.RoundButton();
+            this.button1 = new calculadora.RoundButton();
             this.hamburguer = new calculadora.RoundButton();
             this.sidebar2 = new System.Windows.Forms.Panel();
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
@@ -123,20 +123,21 @@
             this.resultadoiss.TabIndex = 9;
             this.resultadoiss.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Button1
+            // button1
             // 
-            this.Button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.Button1.BorderRadius = 10;
-            this.Button1.FlatAppearance.BorderSize = 0;
-            this.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Button1.ForeColor = System.Drawing.Color.White;
-            this.Button1.Location = new System.Drawing.Point(80, 306);
-            this.Button1.Name = "Button1";
-            this.Button1.Size = new System.Drawing.Size(149, 23);
-            this.Button1.TabIndex = 13;
-            this.Button1.Text = "Calcular";
-            this.Button1.UseVisualStyleBackColor = false;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.button1.BorderRadius = 10;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(80, 306);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(149, 23);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "Calcular";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // hamburguer
             // 
@@ -281,7 +282,7 @@
             this.Controls.Add(this.sidebar2);
             this.Controls.Add(this.sidebar);
             this.Controls.Add(this.classe);
-            this.Controls.Add(this.Button1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.resultadoiss);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -308,7 +309,7 @@
         private Label label3;
         private Label label4;
         private Label resultadoiss;
-        private calculadora.RoundButton Button1;
+        private calculadora.RoundButton button1;
         private calculadora.RoundButton hamburguer;
         private Panel sidebar2;
         private FlowLayoutPanel sidebar;
