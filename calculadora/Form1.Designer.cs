@@ -69,6 +69,7 @@ namespace calculadora
             this.panel2 = new System.Windows.Forms.Panel();
             this.padraoButton = new System.Windows.Forms.Button();
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
+            this.historicoTemporareo = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.sidebar.SuspendLayout();
@@ -83,6 +84,7 @@ namespace calculadora
             this.resultadoTextBox.Name = "resultadoTextBox";
             this.resultadoTextBox.Size = new System.Drawing.Size(302, 127);
             this.resultadoTextBox.TabIndex = 0;
+            this.resultadoTextBox.Text = "0";
             this.resultadoTextBox.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             // 
             // num1
@@ -559,6 +561,16 @@ namespace calculadora
             this.sidebar.TabIndex = 25;
             this.sidebar.Paint += new System.Windows.Forms.PaintEventHandler(this.sidebar_Paint);
             // 
+            // historicoTemporareo
+            // 
+            this.historicoTemporareo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.historicoTemporareo.ForeColor = System.Drawing.Color.Gray;
+            this.historicoTemporareo.Location = new System.Drawing.Point(9, 102);
+            this.historicoTemporareo.Name = "historicoTemporareo";
+            this.historicoTemporareo.Size = new System.Drawing.Size(286, 23);
+            this.historicoTemporareo.TabIndex = 28;
+            this.historicoTemporareo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -566,6 +578,7 @@ namespace calculadora
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(307, 493);
+            this.Controls.Add(this.historicoTemporareo);
             this.Controls.Add(this.hamburguer);
             this.Controls.Add(this.sidebar);
             this.Controls.Add(this.delet1);
@@ -640,6 +653,7 @@ namespace calculadora
         private Panel panel2;
         private Button padraoButton;
         private FlowLayoutPanel sidebar;
+        private Label historicoTemporareo;
     }
 
 
