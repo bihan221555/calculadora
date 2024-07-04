@@ -290,8 +290,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.aliquotaiss);
             this.Controls.Add(this.valorServico);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "calculoiss";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Calculadora";
             this.sidebar.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

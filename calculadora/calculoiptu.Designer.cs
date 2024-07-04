@@ -314,9 +314,10 @@
             this.Controls.Add(this.aliquota);
             this.Controls.Add(this.valorRegiao);
             this.Controls.Add(this.m2area);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "calculoiptu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "calculoiptu";
+            this.Text = "Calculadora";
             this.sidebar.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

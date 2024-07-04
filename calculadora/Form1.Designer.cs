@@ -61,7 +61,6 @@ namespace calculadora
             this.sidebar2 = new System.Windows.Forms.Panel();
             this.hamburguer = new calculadora.RoundButton();
             this.sidebarTransition2 = new System.Windows.Forms.Timer(this.components);
-            this.delet1 = new calculadora.RoundButton();
             this.label1 = new System.Windows.Forms.Label();
             this.historicoTemp = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -70,6 +69,7 @@ namespace calculadora
             this.padraoButton = new System.Windows.Forms.Button();
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.historicoTemporareo = new System.Windows.Forms.Label();
+            this.delet1 = new calculadora.RoundButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.sidebar.SuspendLayout();
@@ -80,10 +80,12 @@ namespace calculadora
             this.resultadoTextBox.BackColor = System.Drawing.Color.Transparent;
             this.resultadoTextBox.Font = new System.Drawing.Font("Segoe UI", 35F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.resultadoTextBox.ForeColor = System.Drawing.Color.White;
-            this.resultadoTextBox.Location = new System.Drawing.Point(3, 107);
+            this.resultadoTextBox.Location = new System.Drawing.Point(3, 106);
             this.resultadoTextBox.Name = "resultadoTextBox";
+            this.resultadoTextBox.Padding = new System.Windows.Forms.Padding(0, 0, 0, 15);
             this.resultadoTextBox.Size = new System.Drawing.Size(302, 69);
             this.resultadoTextBox.TabIndex = 0;
+            this.resultadoTextBox.Text = "0";
             this.resultadoTextBox.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             // 
             // num1
@@ -454,24 +456,6 @@ namespace calculadora
             this.sidebarTransition2.Interval = 1;
             this.sidebarTransition2.Tick += new System.EventHandler(this.sidebarTransition2_Tick);
             // 
-            // delet1
-            // 
-            this.delet1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.delet1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("delet1.BackgroundImage")));
-            this.delet1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.delet1.BorderRadius = 10;
-            this.delet1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.delet1.FlatAppearance.BorderSize = 0;
-            this.delet1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.delet1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.delet1.ForeColor = System.Drawing.Color.White;
-            this.delet1.Location = new System.Drawing.Point(155, 203);
-            this.delet1.Name = "delet1";
-            this.delet1.Size = new System.Drawing.Size(67, 52);
-            this.delet1.TabIndex = 18;
-            this.delet1.UseVisualStyleBackColor = false;
-            this.delet1.Click += new System.EventHandler(this.delet1_Click);
-            // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -562,13 +546,33 @@ namespace calculadora
             // 
             // historicoTemporareo
             // 
+            this.historicoTemporareo.BackColor = System.Drawing.Color.Transparent;
+            this.historicoTemporareo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.historicoTemporareo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.historicoTemporareo.ForeColor = System.Drawing.Color.Gray;
-            this.historicoTemporareo.Location = new System.Drawing.Point(9, 102);
+            this.historicoTemporareo.Location = new System.Drawing.Point(9, 80);
             this.historicoTemporareo.Name = "historicoTemporareo";
             this.historicoTemporareo.Size = new System.Drawing.Size(286, 23);
             this.historicoTemporareo.TabIndex = 28;
             this.historicoTemporareo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // delet1
+            // 
+            this.delet1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.delet1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("delet1.BackgroundImage")));
+            this.delet1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.delet1.BorderRadius = 10;
+            this.delet1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.delet1.FlatAppearance.BorderSize = 0;
+            this.delet1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.delet1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.delet1.ForeColor = System.Drawing.Color.White;
+            this.delet1.Location = new System.Drawing.Point(155, 203);
+            this.delet1.Name = "delet1";
+            this.delet1.Size = new System.Drawing.Size(67, 52);
+            this.delet1.TabIndex = 18;
+            this.delet1.UseVisualStyleBackColor = false;
+            this.delet1.Click += new System.EventHandler(this.delet1_Click);
             // 
             // Form1
             // 
@@ -577,7 +581,6 @@ namespace calculadora
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(307, 493);
-            this.Controls.Add(this.historicoTemporareo);
             this.Controls.Add(this.hamburguer);
             this.Controls.Add(this.sidebar);
             this.Controls.Add(this.delet1);
@@ -600,9 +603,10 @@ namespace calculadora
             this.Controls.Add(this.num3);
             this.Controls.Add(this.num2);
             this.Controls.Add(this.num1);
-            this.Controls.Add(this.resultadoTextBox);
             this.Controls.Add(this.sidebar2);
             this.Controls.Add(this.classe);
+            this.Controls.Add(this.resultadoTextBox);
+            this.Controls.Add(this.historicoTemporareo);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
@@ -643,7 +647,6 @@ namespace calculadora
         private System.Windows.Forms.Timer sidebarTransition;
         private Panel sidebar2;
         private System.Windows.Forms.Timer sidebarTransition2;
-        private RoundButton delet1;
         private RoundButton hamburguer;
         private Label label1;
         private Label historicoTemp;
@@ -653,6 +656,7 @@ namespace calculadora
         private Button padraoButton;
         private FlowLayoutPanel sidebar;
         private Label historicoTemporareo;
+        private RoundButton delet1;
     }
 
 

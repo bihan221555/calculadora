@@ -283,9 +283,10 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.classe);
             this.Controls.Add(this.panel3);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "impostomunicipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "impostomunicipal";
+            this.Text = "Calculadora";
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.sidebar.ResumeLayout(false);

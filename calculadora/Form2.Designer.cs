@@ -279,9 +279,11 @@
             this.Controls.Add(this.classe);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel4);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form2";
+            this.Text = "Calculadora";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.sidebar.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
