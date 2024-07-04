@@ -200,10 +200,13 @@ namespace calculadora
 
         private void negativar_Click(object sender, EventArgs e)
         {
-            if (resultadoTextBox.Text != "")
+            if (resultadoTextBox.Text != "0")
             {
-                double numeroNegativo = Math.Pow(float.Parse(resultadoTextBox.Text), 1) * -1;
-                resultadoTextBox.Text = numeroNegativo.ToString();
+                if (resultadoTextBox.Text != "")
+                {
+                    double numeroNegativo = Math.Pow(float.Parse(resultadoTextBox.Text), 1) * -1;
+                    resultadoTextBox.Text = numeroNegativo.ToString();
+                }
             }
         }
 
