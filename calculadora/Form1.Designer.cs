@@ -70,8 +70,8 @@ namespace calculadora
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.historicoTemporareo = new System.Windows.Forms.Label();
             this.delet1 = new calculadora.RoundButton();
-            this.roundButton1 = new calculadora.RoundButton();
-            this.roundButton2 = new calculadora.RoundButton();
+            this.raiz = new calculadora.RoundButton();
+            this.potencia = new calculadora.RoundButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.sidebar.SuspendLayout();
@@ -576,35 +576,45 @@ namespace calculadora
             this.delet1.UseVisualStyleBackColor = false;
             this.delet1.Click += new System.EventHandler(this.delet1_Click);
             // 
-            // roundButton1
+            // raiz
             // 
-            this.roundButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.roundButton1.BorderRadius = 10;
-            this.roundButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundButton1.FlatAppearance.BorderSize = 0;
-            this.roundButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundButton1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roundButton1.ForeColor = System.Drawing.Color.White;
-            this.roundButton1.Location = new System.Drawing.Point(82, 203);
-            this.roundButton1.Name = "roundButton1";
-            this.roundButton1.Size = new System.Drawing.Size(67, 52);
-            this.roundButton1.TabIndex = 29;
-            this.roundButton1.UseVisualStyleBackColor = false;
+            this.raiz.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.raiz.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("raiz.BackgroundImage")));
+            this.raiz.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.raiz.BorderRadius = 10;
+            this.raiz.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.raiz.FlatAppearance.BorderSize = 0;
+            this.raiz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.raiz.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.raiz.ForeColor = System.Drawing.Color.White;
+            this.raiz.Location = new System.Drawing.Point(82, 203);
+            this.raiz.Name = "raiz";
+            this.raiz.Size = new System.Drawing.Size(67, 52);
+            this.raiz.TabIndex = 29;
+            this.raiz.UseVisualStyleBackColor = false;
+            this.raiz.Click += new System.EventHandler(this.raiz_Click);
             // 
-            // roundButton2
+            // potencia
             // 
-            this.roundButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.roundButton2.BorderRadius = 10;
-            this.roundButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundButton2.FlatAppearance.BorderSize = 0;
-            this.roundButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundButton2.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roundButton2.ForeColor = System.Drawing.Color.White;
-            this.roundButton2.Location = new System.Drawing.Point(9, 203);
-            this.roundButton2.Name = "roundButton2";
-            this.roundButton2.Size = new System.Drawing.Size(67, 52);
-            this.roundButton2.TabIndex = 30;
-            this.roundButton2.UseVisualStyleBackColor = false;
+            this.potencia.AutoSize = true;
+            this.potencia.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.potencia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.potencia.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("potencia.BackgroundImage")));
+            this.potencia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.potencia.BorderRadius = 10;
+            this.potencia.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.potencia.FlatAppearance.BorderSize = 0;
+            this.potencia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.potencia.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.potencia.ForeColor = System.Drawing.Color.White;
+            this.potencia.Location = new System.Drawing.Point(9, 203);
+            this.potencia.MaximumSize = new System.Drawing.Size(67, 52);
+            this.potencia.MinimumSize = new System.Drawing.Size(67, 52);
+            this.potencia.Name = "potencia";
+            this.potencia.Size = new System.Drawing.Size(67, 52);
+            this.potencia.TabIndex = 30;
+            this.potencia.UseVisualStyleBackColor = false;
+            this.potencia.Click += new System.EventHandler(this.potencia_Click);
             // 
             // Form1
             // 
@@ -613,8 +623,6 @@ namespace calculadora
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(307, 493);
-            this.Controls.Add(this.roundButton2);
-            this.Controls.Add(this.roundButton1);
             this.Controls.Add(this.hamburguer);
             this.Controls.Add(this.sidebar);
             this.Controls.Add(this.delet1);
@@ -641,6 +649,8 @@ namespace calculadora
             this.Controls.Add(this.classe);
             this.Controls.Add(this.resultadoTextBox);
             this.Controls.Add(this.historicoTemporareo);
+            this.Controls.Add(this.raiz);
+            this.Controls.Add(this.potencia);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
@@ -691,8 +701,8 @@ namespace calculadora
         private FlowLayoutPanel sidebar;
         private Label historicoTemporareo;
         private RoundButton delet1;
-        private RoundButton roundButton1;
-        private RoundButton roundButton2;
+        private RoundButton raiz;
+        private RoundButton potencia;
     }
 
 

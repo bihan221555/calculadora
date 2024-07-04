@@ -1,13 +1,14 @@
 ﻿using calculadoraimposto1;
 using iText.Kernel.Colors;
+using System;
 
 namespace calculadora
 {
     public partial class Form1 : Form
     {
-        public decimal resultado { get; set; }
-        public decimal valor { get; set; }
-        public decimal valor2 { get; set; }
+        public double resultado { get; set; }
+        public double valor { get; set; }
+        public double valor2 { get; set; }
         public string sinal { get; set; }
 
         private Operacao operacaoSelecionada { get; set; }
@@ -17,7 +18,9 @@ namespace calculadora
             Adicao,
             Subtracao,
             Multiplicacao,
-            Divisao
+            Divisao,
+            Potencia,
+            Raiz
         }
 
         public Form1()
@@ -27,12 +30,19 @@ namespace calculadora
 
         private void num0_Click(object sender, EventArgs e)
         {
-            resultadoTextBox.Text += "0";
+            if (resultadoTextBox.Text == "0" || resultadoTextBox.Text == Convert.ToString(valor))
+            {
+                resultadoTextBox.Text = "0";
+            }
+            else
+            {
+                resultadoTextBox.Text += "0";
+            }
         }
 
         private void num1_Click(object sender, EventArgs e)
         {
-            if (resultadoTextBox.Text == "0")
+            if (resultadoTextBox.Text == "0" || resultadoTextBox.Text == Convert.ToString(valor))
             {
                 resultadoTextBox.Text = "1";
             }
@@ -44,7 +54,7 @@ namespace calculadora
 
         private void num2_Click(object sender, EventArgs e)
         {
-            if (resultadoTextBox.Text == "0")
+            if (resultadoTextBox.Text == "0" || resultadoTextBox.Text == Convert.ToString(valor))
             {
                 resultadoTextBox.Text = "2";
             }
@@ -56,7 +66,7 @@ namespace calculadora
 
         private void num3_Click(object sender, EventArgs e)
         {
-            if (resultadoTextBox.Text == "0")
+            if (resultadoTextBox.Text == "0" || resultadoTextBox.Text == Convert.ToString(valor))
             {
                 resultadoTextBox.Text = "3";
             }
@@ -68,7 +78,7 @@ namespace calculadora
 
         private void num4_Click(object sender, EventArgs e)
         {
-            if (resultadoTextBox.Text == "0")
+            if (resultadoTextBox.Text == "0" || resultadoTextBox.Text == Convert.ToString(valor))
             {
                 resultadoTextBox.Text = "4";
             }
@@ -80,7 +90,7 @@ namespace calculadora
 
         private void num5_Click(object sender, EventArgs e)
         {
-            if (resultadoTextBox.Text == "0")
+            if (resultadoTextBox.Text == "0" || resultadoTextBox.Text == Convert.ToString(valor))
             {
                 resultadoTextBox.Text = "5";
             }
@@ -92,7 +102,7 @@ namespace calculadora
 
         private void num6_Click(object sender, EventArgs e)
         {
-            if (resultadoTextBox.Text == "0")
+            if (resultadoTextBox.Text == "0" || resultadoTextBox.Text == Convert.ToString(valor))
             {
                 resultadoTextBox.Text = "6";
             }
@@ -104,19 +114,24 @@ namespace calculadora
 
         private void num7_Click(object sender, EventArgs e)
         {
-            if (resultadoTextBox.Text == "0")
             {
-                resultadoTextBox.Text = "7";
+                string textoAtual = resultadoTextBox.Text;
+
+                if (resultadoTextBox.Text == "0" || resultadoTextBox.Text == Convert.ToString(valor))
+                {
+                    resultadoTextBox.Text = "7";
+                }
+                else
+                {
+                    resultadoTextBox.Text += "7";
+                }
             }
-            else
-            {
-                resultadoTextBox.Text += "7";
-            }
+
         }
 
         private void num8_Click(object sender, EventArgs e)
         {
-            if (resultadoTextBox.Text == "0")
+            if (resultadoTextBox.Text == "0" || resultadoTextBox.Text == Convert.ToString(valor))
             {
                 resultadoTextBox.Text = "8";
             }
@@ -128,7 +143,7 @@ namespace calculadora
 
         private void num9_Click(object sender, EventArgs e)
         {
-            if (resultadoTextBox.Text == "0")
+            if (resultadoTextBox.Text == "0" || resultadoTextBox.Text == Convert.ToString(valor))
             {
                 resultadoTextBox.Text = "9";
             }
@@ -140,7 +155,7 @@ namespace calculadora
 
         private void virgula_Click(object sender, EventArgs e)
         {
-            if (resultadoTextBox.Text == "")
+            if (resultadoTextBox.Text == "" || resultadoTextBox.Text == Convert.ToString(valor))
             {
                 resultadoTextBox.Text = "0,";
             }
@@ -156,9 +171,9 @@ namespace calculadora
             {
                 sinal = "+";
                 operacaoSelecionada = Operacao.Adicao;
-                valor += Convert.ToDecimal(resultadoTextBox.Text);
-                historicoTemporareo.Text = Convert.ToString(valor) + "+";
-                resultadoTextBox.Text = "";
+                valor += Convert.ToDouble(resultadoTextBox.Text);
+                historicoTemporareo.Text = Convert.ToString(valor) + " + ";
+                resultadoTextBox.Text = Convert.ToString(valor);
             }
         }
 
@@ -168,9 +183,9 @@ namespace calculadora
             {
                 sinal = "-";
                 operacaoSelecionada = Operacao.Subtracao;
-                valor += Convert.ToDecimal(resultadoTextBox.Text);
-                historicoTemporareo.Text = Convert.ToString(valor) + "-";
-                resultadoTextBox.Text = "";
+                valor += Convert.ToDouble(resultadoTextBox.Text);
+                historicoTemporareo.Text = Convert.ToString(valor) + " - ";
+                resultadoTextBox.Text = Convert.ToString(valor);
             }
         }
 
@@ -180,9 +195,9 @@ namespace calculadora
             {
                 sinal = "X";
                 operacaoSelecionada = Operacao.Multiplicacao;
-                valor += Convert.ToDecimal(resultadoTextBox.Text);
-                historicoTemporareo.Text = Convert.ToString(valor) + "*";
-                resultadoTextBox.Text = "";
+                valor += Convert.ToDouble(resultadoTextBox.Text);
+                historicoTemporareo.Text = Convert.ToString(valor) + " x ";
+                resultadoTextBox.Text = Convert.ToString(valor);
             }
         }
 
@@ -192,9 +207,33 @@ namespace calculadora
             {
                 sinal = "/";
                 operacaoSelecionada = Operacao.Divisao;
-                valor += Convert.ToDecimal(resultadoTextBox.Text);
-                historicoTemporareo.Text = Convert.ToString(valor) + "/";
-                resultadoTextBox.Text = "";
+                valor += Convert.ToDouble(resultadoTextBox.Text);
+                historicoTemporareo.Text = Convert.ToString(valor) + " ÷ ";
+                resultadoTextBox.Text = Convert.ToString(valor);
+            }
+        }
+
+        private void potencia_Click(object sender, EventArgs e)
+        {
+            if (resultadoTextBox.Text != "")
+            {
+                sinal = "^";
+                operacaoSelecionada = Operacao.Potencia;
+                valor += Convert.ToDouble(resultadoTextBox.Text);
+                historicoTemporareo.Text = Convert.ToString(valor) + " ^ ";
+                resultadoTextBox.Text = Convert.ToString(valor);
+            }
+        }
+
+        private void raiz_Click(object sender, EventArgs e)
+        {
+            if (resultadoTextBox.Text != "")
+            {
+                sinal = "√";
+                operacaoSelecionada = Operacao.Raiz;
+                valor += Convert.ToDouble(resultadoTextBox.Text);
+                historicoTemporareo.Text = Convert.ToString(valor) + " √ ";
+                resultadoTextBox.Text = Convert.ToString(valor);
             }
         }
 
@@ -241,7 +280,7 @@ namespace calculadora
         {
             if (resultadoTextBox.Text != "")
             {
-                resultadoTextBox.Text = Convert.ToString(valor * (Convert.ToDecimal(resultadoTextBox.Text) / 100));
+                resultadoTextBox.Text = Convert.ToString(valor * (Convert.ToDouble(resultadoTextBox.Text) / 100));
             }
         }
 
@@ -252,22 +291,30 @@ namespace calculadora
                 switch (operacaoSelecionada)
                 {
                     case Operacao.Adicao:
-                        resultado = valor + Convert.ToDecimal(resultadoTextBox.Text);
-                        historicoTemporareo.Text = Convert.ToString(valor) + " + " + resultadoTextBox.Text + "=";
+                        resultado = valor + Convert.ToDouble(resultadoTextBox.Text);
+                        historicoTemporareo.Text = Convert.ToString(valor) + " + " + resultadoTextBox.Text + " = ";
                         break;
                     case Operacao.Subtracao:
-                        resultado = valor - Convert.ToDecimal(resultadoTextBox.Text);
-                        historicoTemporareo.Text = Convert.ToString(valor) + " - " + resultadoTextBox.Text + "=";
+                        resultado = valor - Convert.ToDouble(resultadoTextBox.Text);
+                        historicoTemporareo.Text = Convert.ToString(valor) + " - " + resultadoTextBox.Text + " = ";
                         break;
                     case Operacao.Multiplicacao:
-                        resultado = valor * Convert.ToDecimal(resultadoTextBox.Text);
-                        historicoTemporareo.Text = Convert.ToString(valor) + " * " + resultadoTextBox.Text + "=";
+                        resultado = valor * Convert.ToDouble(resultadoTextBox.Text);
+                        historicoTemporareo.Text = Convert.ToString(valor) + " x " + resultadoTextBox.Text + " = ";
+                        break;
+                    case Operacao.Potencia:
+                        resultado = Math.Pow(valor,Convert.ToDouble(resultadoTextBox.Text));
+                        historicoTemporareo.Text = Convert.ToString(valor) + " ^ " + resultadoTextBox.Text + " = ";
+                        break;
+                    case Operacao.Raiz:
+                        resultado = Math.Pow(valor, 1.0 / Convert.ToDouble(resultadoTextBox.Text));
+                        historicoTemporareo.Text = Convert.ToString(valor) + " √ " + resultadoTextBox.Text + " = ";
                         break;
                     case Operacao.Divisao:
-                        if (Convert.ToDecimal(resultadoTextBox.Text) != 0)
+                        if (Convert.ToDouble(resultadoTextBox.Text) != 0)
                         {
-                            resultado = valor / Convert.ToDecimal(resultadoTextBox.Text);
-                            historicoTemporareo.Text = Convert.ToString(valor) + " / " + resultadoTextBox.Text + "=";
+                            resultado = valor / Convert.ToDouble(resultadoTextBox.Text);
+                            historicoTemporareo.Text = Convert.ToString(valor) + " ÷ " + resultadoTextBox.Text + " = ";
                         }
                         else
                         {
@@ -280,6 +327,7 @@ namespace calculadora
                 {
                     resultadoTextBox.Text = Convert.ToString(resultado);
                 }
+
             }
         }
 
