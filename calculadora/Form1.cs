@@ -8,7 +8,7 @@ namespace calculadora
     {
         public double resultado { get; set; }
         public double valor { get; set; }
-        public double valor2 { get; set; }
+        public bool valor2 { get; set; } = true;
         public string sinal { get; set; }
 
         private Operacao operacaoSelecionada { get; set; }
@@ -28,129 +28,67 @@ namespace calculadora
             InitializeComponent();
         }
 
-        private void num0_Click(object sender, EventArgs e)
+        private void AdicionarDigito(string digito)
         {
-            if (resultadoTextBox.Text == "0")
+            if (valor2 || resultadoTextBox.Text == "0")
             {
-                resultadoTextBox.Text = "0";
+                resultadoTextBox.Text = digito;
+                valor2 = false;
             }
             else
             {
-                resultadoTextBox.Text += "0";
+                resultadoTextBox.Text += digito;
             }
+        }
+
+        private void num0_Click(object sender, EventArgs e)
+        {
+            AdicionarDigito("0");
         }
 
         private void num1_Click(object sender, EventArgs e)
         {
-            if (resultadoTextBox.Text == "0")
-            {
-                resultadoTextBox.Text = "1";
-            }
-            else
-            {
-                resultadoTextBox.Text += "1";
-            }
+            AdicionarDigito("1");
         }
 
         private void num2_Click(object sender, EventArgs e)
         {
-            if (resultadoTextBox.Text == "0")
-            {
-                resultadoTextBox.Text = "2";
-            }
-            else
-            {
-                resultadoTextBox.Text += "2";
-            }
+            AdicionarDigito("2");
         }
 
         private void num3_Click(object sender, EventArgs e)
         {
-            if (resultadoTextBox.Text == "0")
-            {
-                resultadoTextBox.Text = "3";
-            }
-            else
-            {
-                resultadoTextBox.Text += "3";
-            }
+            AdicionarDigito("3");
         }
 
         private void num4_Click(object sender, EventArgs e)
         {
-            if (resultadoTextBox.Text == "0")
-            {
-                resultadoTextBox.Text = "4";
-            }
-            else
-            {
-                resultadoTextBox.Text += "4";
-            }
+            AdicionarDigito("4");
         }
 
         private void num5_Click(object sender, EventArgs e)
         {
-            if (resultadoTextBox.Text == "0")
-            {
-                resultadoTextBox.Text = "5";
-            }
-            else
-            {
-                resultadoTextBox.Text += "5";
-            }
+            AdicionarDigito("5");
         }
 
         private void num6_Click(object sender, EventArgs e)
         {
-            if (resultadoTextBox.Text == "0")
-            {
-                resultadoTextBox.Text = "6";
-            }
-            else
-            {
-                resultadoTextBox.Text += "6";
-            }
+            AdicionarDigito("6");
         }
 
         private void num7_Click(object sender, EventArgs e)
         {
-            {
-                string textoAtual = resultadoTextBox.Text;
-
-                if (resultadoTextBox.Text == "0")
-                {
-                    resultadoTextBox.Text = "7";
-                }
-                else
-                {
-                    resultadoTextBox.Text += "7";
-                }
-            }
-
+            AdicionarDigito("7");
         }
 
         private void num8_Click(object sender, EventArgs e)
         {
-            if (resultadoTextBox.Text == "0")
-            {
-                resultadoTextBox.Text = "8";
-            }
-            else
-            {
-                resultadoTextBox.Text += "8";
-            }
+            AdicionarDigito("8");
         }
 
         private void num9_Click(object sender, EventArgs e)
         {
-            if (resultadoTextBox.Text == "0")
-            {
-                resultadoTextBox.Text = "9";
-            }
-            else
-            {
-                resultadoTextBox.Text += "9";
-            }
+            AdicionarDigito("9");
         }
 
         private void virgula_Click(object sender, EventArgs e)
@@ -171,8 +109,9 @@ namespace calculadora
             {
                 sinal = "+";
                 operacaoSelecionada = Operacao.Adicao;
-                valor += Convert.ToDouble(resultadoTextBox.Text);
+                valor = Convert.ToDouble(resultadoTextBox.Text);
                 historicoTemporareo.Text = Convert.ToString(valor) + " + ";
+                valor2 = true;
             }
         }
 
@@ -182,8 +121,9 @@ namespace calculadora
             {
                 sinal = "-";
                 operacaoSelecionada = Operacao.Subtracao;
-                valor += Convert.ToDouble(resultadoTextBox.Text);
+                valor = Convert.ToDouble(resultadoTextBox.Text);
                 historicoTemporareo.Text = Convert.ToString(valor) + " - ";
+                valor2 = true;
             }
         }
 
@@ -193,8 +133,9 @@ namespace calculadora
             {
                 sinal = "X";
                 operacaoSelecionada = Operacao.Multiplicacao;
-                valor += Convert.ToDouble(resultadoTextBox.Text);
+                valor = Convert.ToDouble(resultadoTextBox.Text);
                 historicoTemporareo.Text = Convert.ToString(valor) + " x ";
+                valor2 = true;
             }
         }
 
@@ -204,8 +145,9 @@ namespace calculadora
             {
                 sinal = "/";
                 operacaoSelecionada = Operacao.Divisao;
-                valor += Convert.ToDouble(resultadoTextBox.Text);
+                valor = Convert.ToDouble(resultadoTextBox.Text);
                 historicoTemporareo.Text = Convert.ToString(valor) + " ÷ ";
+                valor2 = true;
             }
         }
 
@@ -215,8 +157,9 @@ namespace calculadora
             {
                 sinal = "^";
                 operacaoSelecionada = Operacao.Potencia;
-                valor += Convert.ToDouble(resultadoTextBox.Text);
+                valor = Convert.ToDouble(resultadoTextBox.Text);
                 historicoTemporareo.Text = Convert.ToString(valor) + " ^ ";
+                valor2 = true;
             }
         }
 
@@ -226,8 +169,9 @@ namespace calculadora
             {
                 sinal = "√";
                 operacaoSelecionada = Operacao.Raiz;
-                valor += Convert.ToDouble(resultadoTextBox.Text);
+                valor = Convert.ToDouble(resultadoTextBox.Text);
                 historicoTemporareo.Text = Convert.ToString(valor) + " √ ";
+                valor2 = true;
             }
         }
 
@@ -321,7 +265,7 @@ namespace calculadora
                 {
                     resultadoTextBox.Text = Convert.ToString(resultado);
                 }
-
+                valor2 = true;
             }
         }
 
