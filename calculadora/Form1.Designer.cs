@@ -34,635 +34,653 @@ namespace calculadora
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.resultadoTextBox = new System.Windows.Forms.Label();
-            this.num1 = new calculadora.RoundButton();
-            this.num2 = new calculadora.RoundButton();
-            this.num3 = new calculadora.RoundButton();
-            this.num4 = new calculadora.RoundButton();
-            this.num5 = new calculadora.RoundButton();
-            this.num6 = new calculadora.RoundButton();
-            this.num7 = new calculadora.RoundButton();
-            this.num8 = new calculadora.RoundButton();
-            this.num9 = new calculadora.RoundButton();
-            this.num0 = new calculadora.RoundButton();
-            this.virgula = new calculadora.RoundButton();
-            this.negativar = new calculadora.RoundButton();
-            this.mais = new calculadora.RoundButton();
-            this.menos = new calculadora.RoundButton();
-            this.vezes = new calculadora.RoundButton();
-            this.divisao = new calculadora.RoundButton();
-            this.igual = new calculadora.RoundButton();
-            this.clear = new calculadora.RoundButton();
-            this.porcentagem = new calculadora.RoundButton();
-            this.classe = new System.Windows.Forms.Label();
-            this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
-            this.sidebar2 = new System.Windows.Forms.Panel();
-            this.hamburguer = new calculadora.RoundButton();
-            this.sidebarTransition2 = new System.Windows.Forms.Timer(this.components);
-            this.label1 = new System.Windows.Forms.Label();
-            this.historicoTemp = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.impostoRendaButton = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.padraoButton = new System.Windows.Forms.Button();
-            this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
-            this.historicoTemporareo = new System.Windows.Forms.Label();
-            this.delet1 = new calculadora.RoundButton();
-            this.raiz = new calculadora.RoundButton();
-            this.potencia = new calculadora.RoundButton();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.sidebar.SuspendLayout();
-            this.SuspendLayout();
+            resultadoTextBox = new Label();
+            num1 = new RoundButton();
+            num2 = new RoundButton();
+            num3 = new RoundButton();
+            num4 = new RoundButton();
+            num5 = new RoundButton();
+            num6 = new RoundButton();
+            num7 = new RoundButton();
+            num8 = new RoundButton();
+            num9 = new RoundButton();
+            num0 = new RoundButton();
+            virgula = new RoundButton();
+            negativar = new RoundButton();
+            mais = new RoundButton();
+            menos = new RoundButton();
+            vezes = new RoundButton();
+            divisao = new RoundButton();
+            igual = new RoundButton();
+            clear = new RoundButton();
+            porcentagem = new RoundButton();
+            classe = new Label();
+            sidebarTransition = new System.Windows.Forms.Timer(components);
+            sidebar2 = new Panel();
+            hamburguer = new RoundButton();
+            sidebarTransition2 = new System.Windows.Forms.Timer(components);
+            label1 = new Label();
+            historicoTemp = new Label();
+            panel1 = new Panel();
+            impostoRendaButton = new Button();
+            panel2 = new Panel();
+            padraoButton = new Button();
+            sidebar = new FlowLayoutPanel();
+            historicoTemporareo = new Label();
+            delet1 = new RoundButton();
+            raiz = new RoundButton();
+            potencia = new RoundButton();
+            Corrigir = new RoundButton();
+            panel1.SuspendLayout();
+            panel2.SuspendLayout();
+            sidebar.SuspendLayout();
+            SuspendLayout();
             // 
             // resultadoTextBox
             // 
-            this.resultadoTextBox.BackColor = System.Drawing.Color.Transparent;
-            this.resultadoTextBox.Font = new System.Drawing.Font("Segoe UI", 35F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.resultadoTextBox.ForeColor = System.Drawing.Color.White;
-            this.resultadoTextBox.Location = new System.Drawing.Point(3, 72);
-            this.resultadoTextBox.Name = "resultadoTextBox";
-            this.resultadoTextBox.Padding = new System.Windows.Forms.Padding(0, 0, 0, 15);
-            this.resultadoTextBox.Size = new System.Drawing.Size(302, 69);
-            this.resultadoTextBox.TabIndex = 0;
-            this.resultadoTextBox.Text = "0";
-            this.resultadoTextBox.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            resultadoTextBox.BackColor = Color.Transparent;
+            resultadoTextBox.Font = new Font("Segoe UI", 35F, FontStyle.Bold, GraphicsUnit.Point);
+            resultadoTextBox.ForeColor = Color.White;
+            resultadoTextBox.Location = new Point(3, 72);
+            resultadoTextBox.Name = "resultadoTextBox";
+            resultadoTextBox.Padding = new Padding(0, 0, 0, 15);
+            resultadoTextBox.Size = new Size(302, 69);
+            resultadoTextBox.TabIndex = 0;
+            resultadoTextBox.Text = "0";
+            resultadoTextBox.TextAlign = ContentAlignment.BottomRight;
             // 
             // num1
             // 
-            this.num1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.num1.BorderRadius = 10;
-            this.num1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.num1.FlatAppearance.BorderSize = 0;
-            this.num1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.num1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.num1.ForeColor = System.Drawing.Color.White;
-            this.num1.Location = new System.Drawing.Point(9, 377);
-            this.num1.Name = "num1";
-            this.num1.Size = new System.Drawing.Size(67, 52);
-            this.num1.TabIndex = 1;
-            this.num1.Text = "1";
-            this.num1.UseVisualStyleBackColor = false;
-            this.num1.Click += new System.EventHandler(this.num1_Click);
+            num1.BackColor = Color.FromArgb(64, 60, 60);
+            num1.BorderRadius = 10;
+            num1.Cursor = Cursors.Hand;
+            num1.FlatAppearance.BorderSize = 0;
+            num1.FlatStyle = FlatStyle.Flat;
+            num1.Font = new Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point);
+            num1.ForeColor = Color.White;
+            num1.Location = new Point(9, 377);
+            num1.Name = "num1";
+            num1.Size = new Size(67, 52);
+            num1.TabIndex = 1;
+            num1.Text = "1";
+            num1.UseVisualStyleBackColor = false;
+            num1.Click += num1_Click;
             // 
             // num2
             // 
-            this.num2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.num2.BorderRadius = 10;
-            this.num2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.num2.FlatAppearance.BorderSize = 0;
-            this.num2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.num2.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.num2.ForeColor = System.Drawing.Color.White;
-            this.num2.Location = new System.Drawing.Point(82, 377);
-            this.num2.Name = "num2";
-            this.num2.Size = new System.Drawing.Size(67, 52);
-            this.num2.TabIndex = 2;
-            this.num2.Text = "2";
-            this.num2.UseVisualStyleBackColor = false;
-            this.num2.Click += new System.EventHandler(this.num2_Click);
+            num2.BackColor = Color.FromArgb(64, 60, 60);
+            num2.BorderRadius = 10;
+            num2.Cursor = Cursors.Hand;
+            num2.FlatAppearance.BorderSize = 0;
+            num2.FlatStyle = FlatStyle.Flat;
+            num2.Font = new Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point);
+            num2.ForeColor = Color.White;
+            num2.Location = new Point(82, 377);
+            num2.Name = "num2";
+            num2.Size = new Size(67, 52);
+            num2.TabIndex = 2;
+            num2.Text = "2";
+            num2.UseVisualStyleBackColor = false;
+            num2.Click += num2_Click;
             // 
             // num3
             // 
-            this.num3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.num3.BorderRadius = 10;
-            this.num3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.num3.FlatAppearance.BorderSize = 0;
-            this.num3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.num3.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.num3.ForeColor = System.Drawing.Color.White;
-            this.num3.Location = new System.Drawing.Point(155, 377);
-            this.num3.Name = "num3";
-            this.num3.Size = new System.Drawing.Size(67, 52);
-            this.num3.TabIndex = 3;
-            this.num3.Text = "3";
-            this.num3.UseVisualStyleBackColor = false;
-            this.num3.Click += new System.EventHandler(this.num3_Click);
+            num3.BackColor = Color.FromArgb(64, 60, 60);
+            num3.BorderRadius = 10;
+            num3.Cursor = Cursors.Hand;
+            num3.FlatAppearance.BorderSize = 0;
+            num3.FlatStyle = FlatStyle.Flat;
+            num3.Font = new Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point);
+            num3.ForeColor = Color.White;
+            num3.Location = new Point(155, 377);
+            num3.Name = "num3";
+            num3.Size = new Size(67, 52);
+            num3.TabIndex = 3;
+            num3.Text = "3";
+            num3.UseVisualStyleBackColor = false;
+            num3.Click += num3_Click;
             // 
             // num4
             // 
-            this.num4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.num4.BorderRadius = 10;
-            this.num4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.num4.FlatAppearance.BorderSize = 0;
-            this.num4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.num4.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.num4.ForeColor = System.Drawing.Color.White;
-            this.num4.Location = new System.Drawing.Point(9, 319);
-            this.num4.Name = "num4";
-            this.num4.Size = new System.Drawing.Size(67, 52);
-            this.num4.TabIndex = 4;
-            this.num4.Text = "4";
-            this.num4.UseVisualStyleBackColor = false;
-            this.num4.Click += new System.EventHandler(this.num4_Click);
+            num4.BackColor = Color.FromArgb(64, 60, 60);
+            num4.BorderRadius = 10;
+            num4.Cursor = Cursors.Hand;
+            num4.FlatAppearance.BorderSize = 0;
+            num4.FlatStyle = FlatStyle.Flat;
+            num4.Font = new Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point);
+            num4.ForeColor = Color.White;
+            num4.Location = new Point(9, 319);
+            num4.Name = "num4";
+            num4.Size = new Size(67, 52);
+            num4.TabIndex = 4;
+            num4.Text = "4";
+            num4.UseVisualStyleBackColor = false;
+            num4.Click += num4_Click;
             // 
             // num5
             // 
-            this.num5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.num5.BorderRadius = 10;
-            this.num5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.num5.FlatAppearance.BorderSize = 0;
-            this.num5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.num5.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.num5.ForeColor = System.Drawing.Color.White;
-            this.num5.Location = new System.Drawing.Point(82, 319);
-            this.num5.Name = "num5";
-            this.num5.Size = new System.Drawing.Size(67, 52);
-            this.num5.TabIndex = 5;
-            this.num5.Text = "5";
-            this.num5.UseVisualStyleBackColor = false;
-            this.num5.Click += new System.EventHandler(this.num5_Click);
+            num5.BackColor = Color.FromArgb(64, 60, 60);
+            num5.BorderRadius = 10;
+            num5.Cursor = Cursors.Hand;
+            num5.FlatAppearance.BorderSize = 0;
+            num5.FlatStyle = FlatStyle.Flat;
+            num5.Font = new Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point);
+            num5.ForeColor = Color.White;
+            num5.Location = new Point(82, 319);
+            num5.Name = "num5";
+            num5.Size = new Size(67, 52);
+            num5.TabIndex = 5;
+            num5.Text = "5";
+            num5.UseVisualStyleBackColor = false;
+            num5.Click += num5_Click;
             // 
             // num6
             // 
-            this.num6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.num6.BorderRadius = 10;
-            this.num6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.num6.FlatAppearance.BorderSize = 0;
-            this.num6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.num6.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.num6.ForeColor = System.Drawing.Color.White;
-            this.num6.Location = new System.Drawing.Point(155, 319);
-            this.num6.Name = "num6";
-            this.num6.Size = new System.Drawing.Size(67, 52);
-            this.num6.TabIndex = 6;
-            this.num6.Text = "6";
-            this.num6.UseVisualStyleBackColor = false;
-            this.num6.Click += new System.EventHandler(this.num6_Click);
+            num6.BackColor = Color.FromArgb(64, 60, 60);
+            num6.BorderRadius = 10;
+            num6.Cursor = Cursors.Hand;
+            num6.FlatAppearance.BorderSize = 0;
+            num6.FlatStyle = FlatStyle.Flat;
+            num6.Font = new Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point);
+            num6.ForeColor = Color.White;
+            num6.Location = new Point(155, 319);
+            num6.Name = "num6";
+            num6.Size = new Size(67, 52);
+            num6.TabIndex = 6;
+            num6.Text = "6";
+            num6.UseVisualStyleBackColor = false;
+            num6.Click += num6_Click;
             // 
             // num7
             // 
-            this.num7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.num7.BorderRadius = 10;
-            this.num7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.num7.FlatAppearance.BorderSize = 0;
-            this.num7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.num7.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.num7.ForeColor = System.Drawing.Color.White;
-            this.num7.Location = new System.Drawing.Point(9, 261);
-            this.num7.Name = "num7";
-            this.num7.Size = new System.Drawing.Size(67, 52);
-            this.num7.TabIndex = 7;
-            this.num7.Text = "7";
-            this.num7.UseVisualStyleBackColor = false;
-            this.num7.Click += new System.EventHandler(this.num7_Click);
+            num7.BackColor = Color.FromArgb(64, 60, 60);
+            num7.BorderRadius = 10;
+            num7.Cursor = Cursors.Hand;
+            num7.FlatAppearance.BorderSize = 0;
+            num7.FlatStyle = FlatStyle.Flat;
+            num7.Font = new Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point);
+            num7.ForeColor = Color.White;
+            num7.Location = new Point(9, 261);
+            num7.Name = "num7";
+            num7.Size = new Size(67, 52);
+            num7.TabIndex = 7;
+            num7.Text = "7";
+            num7.UseVisualStyleBackColor = false;
+            num7.Click += num7_Click;
             // 
             // num8
             // 
-            this.num8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.num8.BorderRadius = 10;
-            this.num8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.num8.FlatAppearance.BorderSize = 0;
-            this.num8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.num8.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.num8.ForeColor = System.Drawing.Color.White;
-            this.num8.Location = new System.Drawing.Point(82, 261);
-            this.num8.Name = "num8";
-            this.num8.Size = new System.Drawing.Size(67, 52);
-            this.num8.TabIndex = 8;
-            this.num8.Text = "8";
-            this.num8.UseVisualStyleBackColor = false;
-            this.num8.Click += new System.EventHandler(this.num8_Click);
+            num8.BackColor = Color.FromArgb(64, 60, 60);
+            num8.BorderRadius = 10;
+            num8.Cursor = Cursors.Hand;
+            num8.FlatAppearance.BorderSize = 0;
+            num8.FlatStyle = FlatStyle.Flat;
+            num8.Font = new Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point);
+            num8.ForeColor = Color.White;
+            num8.Location = new Point(82, 261);
+            num8.Name = "num8";
+            num8.Size = new Size(67, 52);
+            num8.TabIndex = 8;
+            num8.Text = "8";
+            num8.UseVisualStyleBackColor = false;
+            num8.Click += num8_Click;
             // 
             // num9
             // 
-            this.num9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.num9.BorderRadius = 10;
-            this.num9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.num9.FlatAppearance.BorderSize = 0;
-            this.num9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.num9.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.num9.ForeColor = System.Drawing.Color.White;
-            this.num9.Location = new System.Drawing.Point(155, 261);
-            this.num9.Name = "num9";
-            this.num9.Size = new System.Drawing.Size(67, 52);
-            this.num9.TabIndex = 9;
-            this.num9.Text = "9";
-            this.num9.UseVisualStyleBackColor = false;
-            this.num9.Click += new System.EventHandler(this.num9_Click);
+            num9.BackColor = Color.FromArgb(64, 60, 60);
+            num9.BorderRadius = 10;
+            num9.Cursor = Cursors.Hand;
+            num9.FlatAppearance.BorderSize = 0;
+            num9.FlatStyle = FlatStyle.Flat;
+            num9.Font = new Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point);
+            num9.ForeColor = Color.White;
+            num9.Location = new Point(155, 261);
+            num9.Name = "num9";
+            num9.Size = new Size(67, 52);
+            num9.TabIndex = 9;
+            num9.Text = "9";
+            num9.UseVisualStyleBackColor = false;
+            num9.Click += num9_Click;
             // 
             // num0
             // 
-            this.num0.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.num0.BorderRadius = 10;
-            this.num0.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.num0.FlatAppearance.BorderSize = 0;
-            this.num0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.num0.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.num0.ForeColor = System.Drawing.Color.White;
-            this.num0.Location = new System.Drawing.Point(82, 435);
-            this.num0.Name = "num0";
-            this.num0.Size = new System.Drawing.Size(67, 52);
-            this.num0.TabIndex = 10;
-            this.num0.Text = "0";
-            this.num0.UseVisualStyleBackColor = false;
-            this.num0.Click += new System.EventHandler(this.num0_Click);
+            num0.BackColor = Color.FromArgb(64, 60, 60);
+            num0.BorderRadius = 10;
+            num0.Cursor = Cursors.Hand;
+            num0.FlatAppearance.BorderSize = 0;
+            num0.FlatStyle = FlatStyle.Flat;
+            num0.Font = new Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point);
+            num0.ForeColor = Color.White;
+            num0.Location = new Point(82, 435);
+            num0.Name = "num0";
+            num0.Size = new Size(67, 52);
+            num0.TabIndex = 10;
+            num0.Text = "0";
+            num0.UseVisualStyleBackColor = false;
+            num0.Click += num0_Click;
             // 
             // virgula
             // 
-            this.virgula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.virgula.BorderRadius = 10;
-            this.virgula.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.virgula.FlatAppearance.BorderSize = 0;
-            this.virgula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.virgula.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.virgula.ForeColor = System.Drawing.Color.White;
-            this.virgula.Location = new System.Drawing.Point(155, 435);
-            this.virgula.Name = "virgula";
-            this.virgula.Size = new System.Drawing.Size(67, 52);
-            this.virgula.TabIndex = 11;
-            this.virgula.Text = ",";
-            this.virgula.UseVisualStyleBackColor = false;
-            this.virgula.Click += new System.EventHandler(this.virgula_Click);
+            virgula.BackColor = Color.FromArgb(64, 60, 60);
+            virgula.BorderRadius = 10;
+            virgula.Cursor = Cursors.Hand;
+            virgula.FlatAppearance.BorderSize = 0;
+            virgula.FlatStyle = FlatStyle.Flat;
+            virgula.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            virgula.ForeColor = Color.White;
+            virgula.Location = new Point(155, 435);
+            virgula.Name = "virgula";
+            virgula.Size = new Size(67, 52);
+            virgula.TabIndex = 11;
+            virgula.Text = ",";
+            virgula.UseVisualStyleBackColor = false;
+            virgula.Click += virgula_Click;
             // 
             // negativar
             // 
-            this.negativar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.negativar.BorderRadius = 10;
-            this.negativar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.negativar.FlatAppearance.BorderSize = 0;
-            this.negativar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.negativar.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.negativar.ForeColor = System.Drawing.Color.White;
-            this.negativar.Location = new System.Drawing.Point(9, 435);
-            this.negativar.Name = "negativar";
-            this.negativar.Size = new System.Drawing.Size(67, 52);
-            this.negativar.TabIndex = 12;
-            this.negativar.Text = "+/-";
-            this.negativar.UseVisualStyleBackColor = false;
-            this.negativar.Click += new System.EventHandler(this.negativar_Click);
+            negativar.BackColor = Color.FromArgb(64, 60, 60);
+            negativar.BorderRadius = 10;
+            negativar.Cursor = Cursors.Hand;
+            negativar.FlatAppearance.BorderSize = 0;
+            negativar.FlatStyle = FlatStyle.Flat;
+            negativar.Font = new Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point);
+            negativar.ForeColor = Color.White;
+            negativar.Location = new Point(9, 435);
+            negativar.Name = "negativar";
+            negativar.Size = new Size(67, 52);
+            negativar.TabIndex = 12;
+            negativar.Text = "+/-";
+            negativar.UseVisualStyleBackColor = false;
+            negativar.Click += negativar_Click;
             // 
             // mais
             // 
-            this.mais.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.mais.BorderRadius = 10;
-            this.mais.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.mais.FlatAppearance.BorderSize = 0;
-            this.mais.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.mais.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.mais.ForeColor = System.Drawing.Color.White;
-            this.mais.Location = new System.Drawing.Point(228, 377);
-            this.mais.Name = "mais";
-            this.mais.Size = new System.Drawing.Size(67, 52);
-            this.mais.TabIndex = 13;
-            this.mais.Text = "+";
-            this.mais.UseVisualStyleBackColor = false;
-            this.mais.Click += new System.EventHandler(this.mais_Click);
+            mais.BackColor = Color.FromArgb(56, 52, 52);
+            mais.BorderRadius = 10;
+            mais.Cursor = Cursors.Hand;
+            mais.FlatAppearance.BorderSize = 0;
+            mais.FlatStyle = FlatStyle.Flat;
+            mais.Font = new Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point);
+            mais.ForeColor = Color.White;
+            mais.Location = new Point(228, 377);
+            mais.Name = "mais";
+            mais.Size = new Size(67, 52);
+            mais.TabIndex = 13;
+            mais.Text = "+";
+            mais.UseVisualStyleBackColor = false;
+            mais.Click += mais_Click;
             // 
             // menos
             // 
-            this.menos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.menos.BorderRadius = 10;
-            this.menos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.menos.FlatAppearance.BorderSize = 0;
-            this.menos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.menos.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.menos.ForeColor = System.Drawing.Color.White;
-            this.menos.Location = new System.Drawing.Point(228, 319);
-            this.menos.Name = "menos";
-            this.menos.Size = new System.Drawing.Size(67, 52);
-            this.menos.TabIndex = 14;
-            this.menos.Text = "-";
-            this.menos.UseVisualStyleBackColor = false;
-            this.menos.Click += new System.EventHandler(this.menos_Click);
+            menos.BackColor = Color.FromArgb(56, 52, 52);
+            menos.BorderRadius = 10;
+            menos.Cursor = Cursors.Hand;
+            menos.FlatAppearance.BorderSize = 0;
+            menos.FlatStyle = FlatStyle.Flat;
+            menos.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            menos.ForeColor = Color.White;
+            menos.Location = new Point(228, 319);
+            menos.Name = "menos";
+            menos.Size = new Size(67, 52);
+            menos.TabIndex = 14;
+            menos.Text = "-";
+            menos.UseVisualStyleBackColor = false;
+            menos.Click += menos_Click;
             // 
             // vezes
             // 
-            this.vezes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.vezes.BorderRadius = 10;
-            this.vezes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.vezes.FlatAppearance.BorderSize = 0;
-            this.vezes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.vezes.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.vezes.ForeColor = System.Drawing.Color.White;
-            this.vezes.Location = new System.Drawing.Point(228, 261);
-            this.vezes.Name = "vezes";
-            this.vezes.Size = new System.Drawing.Size(67, 52);
-            this.vezes.TabIndex = 15;
-            this.vezes.Text = "X";
-            this.vezes.UseVisualStyleBackColor = false;
-            this.vezes.Click += new System.EventHandler(this.vezes_Click);
+            vezes.BackColor = Color.FromArgb(56, 52, 52);
+            vezes.BorderRadius = 10;
+            vezes.Cursor = Cursors.Hand;
+            vezes.FlatAppearance.BorderSize = 0;
+            vezes.FlatStyle = FlatStyle.Flat;
+            vezes.Font = new Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point);
+            vezes.ForeColor = Color.White;
+            vezes.Location = new Point(228, 261);
+            vezes.Name = "vezes";
+            vezes.Size = new Size(67, 52);
+            vezes.TabIndex = 15;
+            vezes.Text = "X";
+            vezes.UseVisualStyleBackColor = false;
+            vezes.Click += vezes_Click;
             // 
             // divisao
             // 
-            this.divisao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.divisao.BorderRadius = 10;
-            this.divisao.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.divisao.FlatAppearance.BorderSize = 0;
-            this.divisao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.divisao.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.divisao.ForeColor = System.Drawing.Color.White;
-            this.divisao.Location = new System.Drawing.Point(228, 203);
-            this.divisao.Name = "divisao";
-            this.divisao.Size = new System.Drawing.Size(67, 52);
-            this.divisao.TabIndex = 16;
-            this.divisao.Text = "÷";
-            this.divisao.UseVisualStyleBackColor = false;
-            this.divisao.Click += new System.EventHandler(this.divisao_Click);
+            divisao.BackColor = Color.FromArgb(56, 52, 52);
+            divisao.BorderRadius = 10;
+            divisao.Cursor = Cursors.Hand;
+            divisao.FlatAppearance.BorderSize = 0;
+            divisao.FlatStyle = FlatStyle.Flat;
+            divisao.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            divisao.ForeColor = Color.White;
+            divisao.Location = new Point(228, 203);
+            divisao.Name = "divisao";
+            divisao.Size = new Size(67, 52);
+            divisao.TabIndex = 16;
+            divisao.Text = "÷";
+            divisao.UseVisualStyleBackColor = false;
+            divisao.Click += divisao_Click;
             // 
             // igual
             // 
-            this.igual.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(188)))), ((int)(((byte)(236)))));
-            this.igual.BorderRadius = 10;
-            this.igual.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.igual.FlatAppearance.BorderSize = 0;
-            this.igual.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.igual.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.igual.ForeColor = System.Drawing.Color.Black;
-            this.igual.Location = new System.Drawing.Point(228, 435);
-            this.igual.Name = "igual";
-            this.igual.Size = new System.Drawing.Size(67, 52);
-            this.igual.TabIndex = 17;
-            this.igual.Text = "=";
-            this.igual.UseVisualStyleBackColor = false;
-            this.igual.Click += new System.EventHandler(this.igual_Click);
+            igual.BackColor = Color.FromArgb(120, 188, 236);
+            igual.BorderRadius = 10;
+            igual.Cursor = Cursors.Hand;
+            igual.FlatAppearance.BorderSize = 0;
+            igual.FlatStyle = FlatStyle.Flat;
+            igual.Font = new Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point);
+            igual.ForeColor = Color.Black;
+            igual.Location = new Point(228, 435);
+            igual.Name = "igual";
+            igual.Size = new Size(67, 52);
+            igual.TabIndex = 17;
+            igual.Text = "=";
+            igual.UseVisualStyleBackColor = false;
+            igual.Click += igual_Click;
             // 
             // clear
             // 
-            this.clear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.clear.BorderRadius = 10;
-            this.clear.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.clear.FlatAppearance.BorderSize = 0;
-            this.clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.clear.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.clear.ForeColor = System.Drawing.Color.White;
-            this.clear.Location = new System.Drawing.Point(155, 144);
-            this.clear.Name = "clear";
-            this.clear.Size = new System.Drawing.Size(67, 52);
-            this.clear.TabIndex = 19;
-            this.clear.Text = "C";
-            this.clear.UseVisualStyleBackColor = false;
-            this.clear.Click += new System.EventHandler(this.clear_Click);
+            clear.BackColor = Color.FromArgb(56, 52, 52);
+            clear.BorderRadius = 10;
+            clear.Cursor = Cursors.Hand;
+            clear.FlatAppearance.BorderSize = 0;
+            clear.FlatStyle = FlatStyle.Flat;
+            clear.Font = new Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point);
+            clear.ForeColor = Color.White;
+            clear.Location = new Point(155, 144);
+            clear.Name = "clear";
+            clear.Size = new Size(67, 52);
+            clear.TabIndex = 19;
+            clear.Text = "C";
+            clear.UseVisualStyleBackColor = false;
+            clear.Click += clear_Click;
             // 
             // porcentagem
             // 
-            this.porcentagem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.porcentagem.BorderRadius = 10;
-            this.porcentagem.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.porcentagem.FlatAppearance.BorderSize = 0;
-            this.porcentagem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.porcentagem.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.porcentagem.ForeColor = System.Drawing.Color.White;
-            this.porcentagem.Location = new System.Drawing.Point(155, 203);
-            this.porcentagem.Name = "porcentagem";
-            this.porcentagem.Size = new System.Drawing.Size(67, 52);
-            this.porcentagem.TabIndex = 20;
-            this.porcentagem.Text = "%";
-            this.porcentagem.UseVisualStyleBackColor = false;
-            this.porcentagem.Click += new System.EventHandler(this.porcentagem_Click);
+            porcentagem.BackColor = Color.FromArgb(56, 52, 52);
+            porcentagem.BorderRadius = 10;
+            porcentagem.Cursor = Cursors.Hand;
+            porcentagem.FlatAppearance.BorderSize = 0;
+            porcentagem.FlatStyle = FlatStyle.Flat;
+            porcentagem.Font = new Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point);
+            porcentagem.ForeColor = Color.White;
+            porcentagem.Location = new Point(155, 203);
+            porcentagem.Name = "porcentagem";
+            porcentagem.Size = new Size(67, 52);
+            porcentagem.TabIndex = 20;
+            porcentagem.Text = "%";
+            porcentagem.UseVisualStyleBackColor = false;
+            porcentagem.Click += porcentagem_Click;
             // 
             // classe
             // 
-            this.classe.AutoSize = true;
-            this.classe.BackColor = System.Drawing.Color.Transparent;
-            this.classe.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.classe.ForeColor = System.Drawing.Color.White;
-            this.classe.Location = new System.Drawing.Point(46, 10);
-            this.classe.Name = "classe";
-            this.classe.Size = new System.Drawing.Size(72, 25);
-            this.classe.TabIndex = 22;
-            this.classe.Text = "Padrão";
+            classe.AutoSize = true;
+            classe.BackColor = Color.Transparent;
+            classe.Font = new Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point);
+            classe.ForeColor = Color.White;
+            classe.Location = new Point(46, 10);
+            classe.Name = "classe";
+            classe.Size = new Size(72, 25);
+            classe.TabIndex = 22;
+            classe.Text = "Padrão";
             // 
             // sidebarTransition
             // 
-            this.sidebarTransition.Interval = 1;
-            this.sidebarTransition.Tick += new System.EventHandler(this.sidebarTransition_Tick);
+            sidebarTransition.Interval = 1;
+            sidebarTransition.Tick += sidebarTransition_Tick;
             // 
             // sidebar2
             // 
-            this.sidebar2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.sidebar2.Location = new System.Drawing.Point(-5, -1);
-            this.sidebar2.Name = "sidebar2";
-            this.sidebar2.Size = new System.Drawing.Size(0, 48);
-            this.sidebar2.TabIndex = 27;
+            sidebar2.BackColor = Color.FromArgb(48, 44, 44);
+            sidebar2.Location = new Point(-5, -1);
+            sidebar2.Name = "sidebar2";
+            sidebar2.Size = new Size(0, 48);
+            sidebar2.TabIndex = 27;
             // 
             // hamburguer
             // 
-            this.hamburguer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.hamburguer.BorderRadius = 10;
-            this.hamburguer.FlatAppearance.BorderSize = 0;
-            this.hamburguer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.hamburguer.Image = ((System.Drawing.Image)(resources.GetObject("hamburguer.Image")));
-            this.hamburguer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.hamburguer.Location = new System.Drawing.Point(3, 7);
-            this.hamburguer.Name = "hamburguer";
-            this.hamburguer.Size = new System.Drawing.Size(37, 33);
-            this.hamburguer.TabIndex = 23;
-            this.hamburguer.UseVisualStyleBackColor = true;
-            this.hamburguer.Click += new System.EventHandler(this.hamburguer_Click);
+            hamburguer.BackgroundImageLayout = ImageLayout.Zoom;
+            hamburguer.BorderRadius = 10;
+            hamburguer.FlatAppearance.BorderSize = 0;
+            hamburguer.FlatStyle = FlatStyle.Flat;
+            hamburguer.Image = (Image)resources.GetObject("hamburguer.Image");
+            hamburguer.ImageAlign = ContentAlignment.MiddleLeft;
+            hamburguer.Location = new Point(3, 7);
+            hamburguer.Name = "hamburguer";
+            hamburguer.Size = new Size(37, 33);
+            hamburguer.TabIndex = 23;
+            hamburguer.UseVisualStyleBackColor = true;
+            hamburguer.Click += hamburguer_Click;
             // 
             // sidebarTransition2
             // 
-            this.sidebarTransition2.Interval = 1;
-            this.sidebarTransition2.Tick += new System.EventHandler(this.sidebarTransition2_Tick);
+            sidebarTransition2.Interval = 1;
+            sidebarTransition2.Tick += sidebarTransition2_Tick;
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.DarkGray;
-            this.label1.Location = new System.Drawing.Point(3, 112);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(286, 30);
-            this.label1.TabIndex = 28;
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.DarkGray;
+            label1.Location = new Point(3, 112);
+            label1.Name = "label1";
+            label1.Size = new Size(286, 30);
+            label1.TabIndex = 28;
+            label1.TextAlign = ContentAlignment.MiddleRight;
             // 
             // historicoTemp
             // 
-            this.historicoTemp.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.historicoTemp.ForeColor = System.Drawing.Color.DarkGray;
-            this.historicoTemp.Location = new System.Drawing.Point(3, 82);
-            this.historicoTemp.Name = "historicoTemp";
-            this.historicoTemp.Size = new System.Drawing.Size(236, 30);
-            this.historicoTemp.TabIndex = 24;
-            this.historicoTemp.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            historicoTemp.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            historicoTemp.ForeColor = Color.DarkGray;
+            historicoTemp.Location = new Point(3, 82);
+            historicoTemp.Name = "historicoTemp";
+            historicoTemp.Size = new Size(236, 30);
+            historicoTemp.TabIndex = 24;
+            historicoTemp.TextAlign = ContentAlignment.MiddleRight;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.impostoRendaButton);
-            this.panel1.Location = new System.Drawing.Point(3, 44);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(236, 35);
-            this.panel1.TabIndex = 26;
+            panel1.Controls.Add(impostoRendaButton);
+            panel1.Location = new Point(3, 44);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(236, 35);
+            panel1.TabIndex = 26;
             // 
             // impostoRendaButton
             // 
-            this.impostoRendaButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.impostoRendaButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.impostoRendaButton.FlatAppearance.BorderSize = 0;
-            this.impostoRendaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.impostoRendaButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.impostoRendaButton.ForeColor = System.Drawing.Color.White;
-            this.impostoRendaButton.Image = ((System.Drawing.Image)(resources.GetObject("impostoRendaButton.Image")));
-            this.impostoRendaButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.impostoRendaButton.Location = new System.Drawing.Point(-13, -15);
-            this.impostoRendaButton.Name = "impostoRendaButton";
-            this.impostoRendaButton.Padding = new System.Windows.Forms.Padding(20, 0, 80, 5);
-            this.impostoRendaButton.Size = new System.Drawing.Size(246, 70);
-            this.impostoRendaButton.TabIndex = 27;
-            this.impostoRendaButton.Text = "Imposto de renda";
-            this.impostoRendaButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.impostoRendaButton.UseVisualStyleBackColor = false;
-            this.impostoRendaButton.Click += new System.EventHandler(this.impostoRendaButton_Click);
+            impostoRendaButton.BackColor = Color.FromArgb(48, 44, 44);
+            impostoRendaButton.Cursor = Cursors.Hand;
+            impostoRendaButton.FlatAppearance.BorderSize = 0;
+            impostoRendaButton.FlatStyle = FlatStyle.Flat;
+            impostoRendaButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            impostoRendaButton.ForeColor = Color.White;
+            impostoRendaButton.Image = (Image)resources.GetObject("impostoRendaButton.Image");
+            impostoRendaButton.ImageAlign = ContentAlignment.MiddleLeft;
+            impostoRendaButton.Location = new Point(-13, -15);
+            impostoRendaButton.Name = "impostoRendaButton";
+            impostoRendaButton.Padding = new Padding(20, 0, 80, 5);
+            impostoRendaButton.Size = new Size(246, 70);
+            impostoRendaButton.TabIndex = 27;
+            impostoRendaButton.Text = "Imposto de renda";
+            impostoRendaButton.TextAlign = ContentAlignment.MiddleRight;
+            impostoRendaButton.UseVisualStyleBackColor = false;
+            impostoRendaButton.Click += impostoRendaButton_Click;
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.padraoButton);
-            this.panel2.Location = new System.Drawing.Point(3, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(233, 35);
-            this.panel2.TabIndex = 29;
+            panel2.Controls.Add(padraoButton);
+            panel2.Location = new Point(3, 3);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(233, 35);
+            panel2.TabIndex = 29;
             // 
             // padraoButton
             // 
-            this.padraoButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.padraoButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.padraoButton.FlatAppearance.BorderSize = 0;
-            this.padraoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.padraoButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.padraoButton.ForeColor = System.Drawing.Color.White;
-            this.padraoButton.Image = ((System.Drawing.Image)(resources.GetObject("padraoButton.Image")));
-            this.padraoButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.padraoButton.Location = new System.Drawing.Point(-13, -15);
-            this.padraoButton.Name = "padraoButton";
-            this.padraoButton.Padding = new System.Windows.Forms.Padding(20, 0, 140, 5);
-            this.padraoButton.Size = new System.Drawing.Size(246, 70);
-            this.padraoButton.TabIndex = 27;
-            this.padraoButton.Text = "Padrão";
-            this.padraoButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.padraoButton.UseVisualStyleBackColor = false;
+            padraoButton.BackColor = Color.FromArgb(48, 44, 44);
+            padraoButton.Cursor = Cursors.Hand;
+            padraoButton.FlatAppearance.BorderSize = 0;
+            padraoButton.FlatStyle = FlatStyle.Flat;
+            padraoButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            padraoButton.ForeColor = Color.White;
+            padraoButton.Image = (Image)resources.GetObject("padraoButton.Image");
+            padraoButton.ImageAlign = ContentAlignment.MiddleLeft;
+            padraoButton.Location = new Point(-13, -15);
+            padraoButton.Name = "padraoButton";
+            padraoButton.Padding = new Padding(20, 0, 140, 5);
+            padraoButton.Size = new Size(246, 70);
+            padraoButton.TabIndex = 27;
+            padraoButton.Text = "Padrão";
+            padraoButton.TextAlign = ContentAlignment.MiddleRight;
+            padraoButton.UseVisualStyleBackColor = false;
             // 
             // sidebar
             // 
-            this.sidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.sidebar.Controls.Add(this.panel2);
-            this.sidebar.Controls.Add(this.panel1);
-            this.sidebar.Controls.Add(this.historicoTemp);
-            this.sidebar.Controls.Add(this.label1);
-            this.sidebar.Location = new System.Drawing.Point(-5, 46);
-            this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(0, 448);
-            this.sidebar.TabIndex = 25;
-            this.sidebar.Paint += new System.Windows.Forms.PaintEventHandler(this.sidebar_Paint);
+            sidebar.BackColor = Color.FromArgb(48, 44, 44);
+            sidebar.Controls.Add(panel2);
+            sidebar.Controls.Add(panel1);
+            sidebar.Controls.Add(historicoTemp);
+            sidebar.Controls.Add(label1);
+            sidebar.Location = new Point(-5, 46);
+            sidebar.Name = "sidebar";
+            sidebar.Size = new Size(0, 448);
+            sidebar.TabIndex = 25;
+            sidebar.Paint += sidebar_Paint;
             // 
             // historicoTemporareo
             // 
-            this.historicoTemporareo.BackColor = System.Drawing.Color.Transparent;
-            this.historicoTemporareo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.historicoTemporareo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.historicoTemporareo.ForeColor = System.Drawing.Color.Gray;
-            this.historicoTemporareo.Location = new System.Drawing.Point(9, 46);
-            this.historicoTemporareo.Name = "historicoTemporareo";
-            this.historicoTemporareo.Size = new System.Drawing.Size(286, 23);
-            this.historicoTemporareo.TabIndex = 28;
-            this.historicoTemporareo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            historicoTemporareo.BackColor = Color.Transparent;
+            historicoTemporareo.FlatStyle = FlatStyle.Flat;
+            historicoTemporareo.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            historicoTemporareo.ForeColor = Color.Gray;
+            historicoTemporareo.Location = new Point(9, 46);
+            historicoTemporareo.Name = "historicoTemporareo";
+            historicoTemporareo.Size = new Size(286, 23);
+            historicoTemporareo.TabIndex = 28;
+            historicoTemporareo.TextAlign = ContentAlignment.MiddleRight;
             // 
             // delet1
             // 
-            this.delet1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.delet1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("delet1.BackgroundImage")));
-            this.delet1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.delet1.BorderRadius = 10;
-            this.delet1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.delet1.FlatAppearance.BorderSize = 0;
-            this.delet1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.delet1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.delet1.ForeColor = System.Drawing.Color.White;
-            this.delet1.Location = new System.Drawing.Point(228, 144);
-            this.delet1.Name = "delet1";
-            this.delet1.Size = new System.Drawing.Size(67, 52);
-            this.delet1.TabIndex = 18;
-            this.delet1.UseVisualStyleBackColor = false;
-            this.delet1.Click += new System.EventHandler(this.delet1_Click);
+            delet1.BackColor = Color.FromArgb(56, 52, 52);
+            delet1.BackgroundImage = (Image)resources.GetObject("delet1.BackgroundImage");
+            delet1.BackgroundImageLayout = ImageLayout.Zoom;
+            delet1.BorderRadius = 10;
+            delet1.Cursor = Cursors.Hand;
+            delet1.FlatAppearance.BorderSize = 0;
+            delet1.FlatStyle = FlatStyle.Flat;
+            delet1.Font = new Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point);
+            delet1.ForeColor = Color.White;
+            delet1.Location = new Point(228, 144);
+            delet1.Name = "delet1";
+            delet1.Size = new Size(67, 52);
+            delet1.TabIndex = 18;
+            delet1.UseVisualStyleBackColor = false;
+            delet1.Click += delet1_Click;
             // 
             // raiz
             // 
-            this.raiz.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.raiz.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("raiz.BackgroundImage")));
-            this.raiz.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.raiz.BorderRadius = 10;
-            this.raiz.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.raiz.FlatAppearance.BorderSize = 0;
-            this.raiz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.raiz.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.raiz.ForeColor = System.Drawing.Color.White;
-            this.raiz.Location = new System.Drawing.Point(82, 203);
-            this.raiz.Name = "raiz";
-            this.raiz.Size = new System.Drawing.Size(67, 52);
-            this.raiz.TabIndex = 29;
-            this.raiz.UseVisualStyleBackColor = false;
-            this.raiz.Click += new System.EventHandler(this.raiz_Click);
+            raiz.BackColor = Color.FromArgb(56, 52, 52);
+            raiz.BackgroundImage = (Image)resources.GetObject("raiz.BackgroundImage");
+            raiz.BackgroundImageLayout = ImageLayout.Center;
+            raiz.BorderRadius = 10;
+            raiz.Cursor = Cursors.Hand;
+            raiz.FlatAppearance.BorderSize = 0;
+            raiz.FlatStyle = FlatStyle.Flat;
+            raiz.Font = new Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point);
+            raiz.ForeColor = Color.White;
+            raiz.Location = new Point(82, 203);
+            raiz.Name = "raiz";
+            raiz.Size = new Size(67, 52);
+            raiz.TabIndex = 29;
+            raiz.UseVisualStyleBackColor = false;
+            raiz.Click += raiz_Click;
             // 
             // potencia
             // 
-            this.potencia.AutoSize = true;
-            this.potencia.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.potencia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.potencia.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("potencia.BackgroundImage")));
-            this.potencia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.potencia.BorderRadius = 10;
-            this.potencia.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.potencia.FlatAppearance.BorderSize = 0;
-            this.potencia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.potencia.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.potencia.ForeColor = System.Drawing.Color.White;
-            this.potencia.Location = new System.Drawing.Point(9, 203);
-            this.potencia.MaximumSize = new System.Drawing.Size(67, 52);
-            this.potencia.MinimumSize = new System.Drawing.Size(67, 52);
-            this.potencia.Name = "potencia";
-            this.potencia.Size = new System.Drawing.Size(67, 52);
-            this.potencia.TabIndex = 30;
-            this.potencia.UseVisualStyleBackColor = false;
-            this.potencia.Click += new System.EventHandler(this.potencia_Click);
+            potencia.AutoSize = true;
+            potencia.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            potencia.BackColor = Color.FromArgb(56, 52, 52);
+            potencia.BackgroundImage = (Image)resources.GetObject("potencia.BackgroundImage");
+            potencia.BackgroundImageLayout = ImageLayout.Center;
+            potencia.BorderRadius = 10;
+            potencia.Cursor = Cursors.Hand;
+            potencia.FlatAppearance.BorderSize = 0;
+            potencia.FlatStyle = FlatStyle.Flat;
+            potencia.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
+            potencia.ForeColor = Color.White;
+            potencia.Location = new Point(9, 203);
+            potencia.MaximumSize = new Size(67, 52);
+            potencia.MinimumSize = new Size(67, 52);
+            potencia.Name = "potencia";
+            potencia.Size = new Size(67, 52);
+            potencia.TabIndex = 30;
+            potencia.UseVisualStyleBackColor = false;
+            potencia.Click += potencia_Click;
+            // 
+            // Corrigir
+            // 
+            Corrigir.BackColor = Color.FromArgb(56, 52, 52);
+            Corrigir.BorderRadius = 10;
+            Corrigir.Cursor = Cursors.Hand;
+            Corrigir.FlatAppearance.BorderSize = 0;
+            Corrigir.FlatStyle = FlatStyle.Flat;
+            Corrigir.Font = new Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point);
+            Corrigir.ForeColor = Color.White;
+            Corrigir.Location = new Point(82, 145);
+            Corrigir.Name = "Corrigir";
+            Corrigir.Size = new Size(67, 52);
+            Corrigir.TabIndex = 31;
+            Corrigir.Text = "CE";
+            Corrigir.UseVisualStyleBackColor = false;
+            Corrigir.Click += Corrigir_Click;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(307, 493);
-            this.Controls.Add(this.hamburguer);
-            this.Controls.Add(this.sidebar);
-            this.Controls.Add(this.delet1);
-            this.Controls.Add(this.porcentagem);
-            this.Controls.Add(this.clear);
-            this.Controls.Add(this.igual);
-            this.Controls.Add(this.divisao);
-            this.Controls.Add(this.vezes);
-            this.Controls.Add(this.menos);
-            this.Controls.Add(this.mais);
-            this.Controls.Add(this.negativar);
-            this.Controls.Add(this.virgula);
-            this.Controls.Add(this.num0);
-            this.Controls.Add(this.num9);
-            this.Controls.Add(this.num8);
-            this.Controls.Add(this.num7);
-            this.Controls.Add(this.num6);
-            this.Controls.Add(this.num5);
-            this.Controls.Add(this.num4);
-            this.Controls.Add(this.num3);
-            this.Controls.Add(this.num2);
-            this.Controls.Add(this.num1);
-            this.Controls.Add(this.sidebar2);
-            this.Controls.Add(this.classe);
-            this.Controls.Add(this.resultadoTextBox);
-            this.Controls.Add(this.historicoTemporareo);
-            this.Controls.Add(this.raiz);
-            this.Controls.Add(this.potencia);
-            this.DoubleBuffered = true;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Calculadora";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.sidebar.ResumeLayout(false);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(34, 30, 30);
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(307, 493);
+            Controls.Add(hamburguer);
+            Controls.Add(sidebar);
+            Controls.Add(delet1);
+            Controls.Add(porcentagem);
+            Controls.Add(clear);
+            Controls.Add(igual);
+            Controls.Add(divisao);
+            Controls.Add(vezes);
+            Controls.Add(menos);
+            Controls.Add(mais);
+            Controls.Add(negativar);
+            Controls.Add(virgula);
+            Controls.Add(num0);
+            Controls.Add(num9);
+            Controls.Add(num8);
+            Controls.Add(num7);
+            Controls.Add(num6);
+            Controls.Add(num5);
+            Controls.Add(num4);
+            Controls.Add(num3);
+            Controls.Add(num2);
+            Controls.Add(num1);
+            Controls.Add(sidebar2);
+            Controls.Add(classe);
+            Controls.Add(resultadoTextBox);
+            Controls.Add(historicoTemporareo);
+            Controls.Add(raiz);
+            Controls.Add(potencia);
+            Controls.Add(Corrigir);
+            DoubleBuffered = true;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Calculadora";
+            Load += Form1_Load;
+            panel1.ResumeLayout(false);
+            panel2.ResumeLayout(false);
+            sidebar.ResumeLayout(false);
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -703,6 +721,8 @@ namespace calculadora
         private RoundButton delet1;
         private RoundButton raiz;
         private RoundButton potencia;
+        private RoundButton roundButton1;
+        private RoundButton Corrigir;
     }
 
 
